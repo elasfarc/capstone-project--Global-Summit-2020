@@ -1,0 +1,81 @@
+
+
+.main-program img { 
+    width: 100px;
+}
+
+.main-program {
+    background-color: $color-primary;
+    color: white;
+    //@include d-flex(flex-start,center);
+    //flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+
+    &-heading {
+        margin-bottom: 60px;
+
+        &:after {
+            content: '';
+            display: block;
+            border-bottom: 5px solid $color-decoration;
+            width: 10%;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    }
+
+    &-cardWraper {
+        
+        @include d-flex();
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+
+        .main-program-card {
+            background-color: $color-sec;
+            height: 150px;
+            width: 100%;
+            padding: 0 ;
+            margin-bottom: 15px;
+            @include d-flex(space-around, center);
+            //padding: 0 10px;
+            text-align: left;
+            border-radius: 5px;
+            h4{
+                color: $color-decoration;
+            }
+
+            .card-description {
+                width: 50%;
+                
+            }
+        }
+
+        .card5 {
+            margin-bottom: 50px;
+        }
+    }
+
+    &-btn {
+        width: 60%;
+        height: 80px;
+        font-family: $font-cocogoose-100;
+        font-size: 1.2rem;
+        background-color: $color-decoration;
+        color: white;
+        border: 1px solid $color-decoration;
+        border-radius: 5px;
+        outline: none;
+        transition: all 0.4s;
+
+        &:hover {
+            background-color: white;
+            color: $color-decoration;
+        }
+    }
+
+    &-footer {
+        display: none;
+    }
+}

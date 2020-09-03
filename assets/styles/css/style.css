@@ -45,6 +45,64 @@ body {
     font-size: 3.112vw;
     font-weight: 300; }
 
+.main-program img {
+  width: 100px; }
+
+.main-program {
+  background-color: #272A31;
+  color: white;
+  text-align: center;
+  padding: 50px 0; }
+  .main-program-heading {
+    margin-bottom: 60px; }
+    .main-program-heading:after {
+      content: '';
+      display: block;
+      border-bottom: 5px solid #EC5242;
+      width: 10%;
+      margin: 0 auto;
+      padding-top: 20px; }
+  .main-program-cardWraper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto; }
+    .main-program-cardWraper .main-program-card {
+      background-color: #D3D3D3;
+      height: 150px;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+      border-radius: 5px; }
+      .main-program-cardWraper .main-program-card h4 {
+        color: #EC5242; }
+      .main-program-cardWraper .main-program-card .card-description {
+        width: 50%; }
+    .main-program-cardWraper .card5 {
+      margin-bottom: 50px; }
+  .main-program-btn {
+    width: 60%;
+    height: 80px;
+    font-family: "Cocogoose Pro", sans-serif;
+    font-size: 1.2rem;
+    background-color: #EC5242;
+    color: white;
+    border: 1px solid #EC5242;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.4s; }
+    .main-program-btn:hover {
+      background-color: white;
+      color: #EC5242; }
+  .main-program-footer {
+    display: none; }
+
 body {
   background-color: #F9F9F9; }
 
