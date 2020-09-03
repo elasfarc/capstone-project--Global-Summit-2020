@@ -18,21 +18,20 @@
 // }
 
 @mixin border {
-    border: 1px solid green;
+  border: 1px solid green;
 }
 
 @mixin d-flex($justifyValue:flex-start, $alienValue:stretch ) {
-    display: flex;
-    justify-content: $justifyValue;
-    align-items: $alienValue;
+  display: flex;
+  justify-content: $justifyValue;
+  align-items: $alienValue;
 }
 
 %tenPerCent-border-B {
-    content: '';
-    display: block;
-    border-bottom: 5px solid $color-decoration;
-    width: 10%;
-    margin: 0 auto;
-    padding-top: 20px;
-    
+  content: '';
+  display: block;
+  border-bottom: 5px solid $color-decoration;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 20px;
 }
