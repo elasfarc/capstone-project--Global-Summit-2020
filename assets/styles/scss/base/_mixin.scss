@@ -26,3 +26,13 @@
     justify-content: $justifyValue;
     align-items: $alienValue;
 }
+
+%tenPerCent-border-B {
+    content: '';
+    display: block;
+    border-bottom: 5px solid $color-decoration;
+    width: 10%;
+    margin: 0 auto;
+    padding-top: 20px;
+    
+}

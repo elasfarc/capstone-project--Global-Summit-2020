@@ -7,6 +7,14 @@ body {
   font-size: calc(1.5vw + 0.6em);
   font-family: "Lato", sans-serif; }
 
+.main-program-heading:after {
+  content: '';
+  display: block;
+  border-bottom: 5px solid #EC5242;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 20px; }
+
 .header {
   height: 80vh;
   position: relative; }
@@ -55,13 +63,6 @@ body {
   padding: 50px 0; }
   .main-program-heading {
     margin-bottom: 60px; }
-    .main-program-heading:after {
-      content: '';
-      display: block;
-      border-bottom: 5px solid #EC5242;
-      width: 10%;
-      margin: 0 auto;
-      padding-top: 20px; }
   .main-program-cardWraper {
     display: flex;
     justify-content: flex-start;

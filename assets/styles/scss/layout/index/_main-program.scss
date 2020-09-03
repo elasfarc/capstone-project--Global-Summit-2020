@@ -16,12 +16,7 @@
         margin-bottom: 60px;
 
         &:after {
-            content: '';
-            display: block;
-            border-bottom: 5px solid $color-decoration;
-            width: 10%;
-            margin: 0 auto;
-            padding-top: 20px;
+            @extend %tenPerCent-border-B;
         }
     }
 
