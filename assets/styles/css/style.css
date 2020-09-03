@@ -7,6 +7,9 @@ p {
   font-family: "Cocogoose Pro", sans-serif;
   font-size: 100px; }
 
+.s {
+  display: block; }
+
 body {
   background-color: royalblue; }
 
