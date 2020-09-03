@@ -1,3 +1,8 @@
-.checker {
-    
+.checkers {
+    height: 200px;
+    width: 200px;
+   
+    background-image: conic-gradient($color-sec 0, $color-sec 90deg, white 90deg, white 180deg, $color-sec 180deg, $color-sec 270deg, white 270deg , white 360deg );
+
+    background-size: 2.5rem 2.5rem;
 }

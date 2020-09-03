@@ -104,6 +104,12 @@ body {
   .main-program-footer {
     display: none; }
 
+.checkers {
+  height: 200px;
+  width: 200px;
+  background-image: conic-gradient(#D3D3D3 0, #D3D3D3 90deg, white 90deg, white 180deg, #D3D3D3 180deg, #D3D3D3 270deg, white 270deg, white 360deg);
+  background-size: 2.5rem 2.5rem; }
+
 body {
   background-color: #F9F9F9; }
 
