@@ -1,5 +1,11 @@
+@import 'var';
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body { 
+    font-size: calc(1.5vw + 0.6em);
+    font-family: $font-lato;
 }

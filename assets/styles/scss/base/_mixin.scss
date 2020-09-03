@@ -1,18 +1,28 @@
-@mixin cocogoose ($weight) {
-    @if $weight == 100 {
-        font-family: $font-cocogoose-100;
-    }
-    @else if $weight == 200 {
-        font-family: $font-cocogoose-200and600;
-        font-weight: 200;
-    }
+// @mixin cocogoose ($weight:300) {
+//     @if $weight == 100 {
+//         font-family: $font-cocogoose-100;
+//     }
+//     @else if $weight == 200 {
+//         font-family: $font-cocogoose-200and600;
+//         font-weight: 200;
+//     }
 
-    @else if $weight == 300 {
-        font-family: $font-cocogoose-reg;
-    }
-    @else if $weight == 600 {
-        font-family: $font-cocogoose-200and600;
-        font-weight: 600;
-    }
+//     @else if $weight == 300 {
+//         font-family: $font-cocogoose-reg;
+//     }
+//     @else if $weight == 600 {
+//         font-family: $font-cocogoose-200and600;
+//         font-weight: 600;
+//     }
 
+// }
+
+@mixin border {
+    border: 1px solid green;
+}
+
+@mixin d-flex($justifyValue:flex-start, $alienValue:stretch ) {
+    display: flex;
+    justify-content: $justifyValue;
+    align-items: $alienValue;
 }

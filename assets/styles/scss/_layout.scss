@@ -1,10 +1,62 @@
-p { 
-    @include cocogoose(100);
-    font-size: 100px;
-}
+.header {
+    height: 100vh;
+    position: relative;
+    &-wrapper {
+        @include border;
+         position: absolute;
+        top: 18%;
+        left: 0;
+        // transform: translate(-20%,-50%);
+        //@include d-flex();
+        //flex-direction: column;
+        height: 75%;
+        padding: 0 18px;
+        
+    }
+    &-main {
+       
+        &-sub {
+            color: $color-decoration;
+            text-transform: capitalize;
+            font-size: 5.083vw;
+            font-weight: 300;
+            margin-bottom: 1vw;
+        }
+        &-primary {
+            color: $color-decoration;
+            text-transform: uppercase;
+            font-family: $font-cocogoose-reg;
+            font-size: 7.306vw;
+            line-height: 1;
 
+            .newline {
+                display: block;
+            }
+        }
+    }
 
+    &-description {
+        border: 3px solid black;
+        background-color: #F7F7F7;
+        //width: 90.875vw;
+        //text-align: justify;
+        font-size: 3.490vw;
+        padding: 2.041vw;
+        margin: 3.41vw 0;
+    }
 
-.s {
-    display: block;
+    &-spacetime {
+        
+        &-date {
+            font-family: $font-cocogoose-reg;
+            letter-spacing: 1px;
+            font-size: 4.912vw;
+            //font-size: 1.4em;
+        }
+        &-location {
+           font-size: 3.512vw;
+            font-weight: 300;
+        }
+    }
+
 }
