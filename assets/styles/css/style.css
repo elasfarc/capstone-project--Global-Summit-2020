@@ -8,41 +8,41 @@ body {
   font-family: "Lato", sans-serif; }
 
 .header {
-  height: 100vh;
+  height: 80vh;
   position: relative; }
   .header-wrapper {
     border: 1px solid green;
     position: absolute;
     top: 18%;
     left: 0;
-    height: 75%;
+    height: 82%;
     padding: 0 18px; }
   .header-main-sub {
     color: #EC5242;
     text-transform: capitalize;
-    font-size: 5.083vw;
+    font-size: 4.683vw;
     font-weight: 300;
     margin-bottom: 1vw; }
   .header-main-primary {
     color: #EC5242;
     text-transform: uppercase;
     font-family: "COCOGOOSE Regular", sans-serif;
-    font-size: 7.306vw;
+    font-size: 6.906vw;
     line-height: 1; }
     .header-main-primary .newline {
       display: block; }
   .header-description {
     border: 3px solid black;
     background-color: #F7F7F7;
-    font-size: 3.490vw;
+    font-size: 3.090vw;
     padding: 2.041vw;
     margin: 3.41vw 0; }
   .header-spacetime-date {
     font-family: "COCOGOOSE Regular", sans-serif;
     letter-spacing: 1px;
-    font-size: 4.912vw; }
+    font-size: 4.512vw; }
   .header-spacetime-location {
-    font-size: 3.512vw;
+    font-size: 3.112vw;
     font-weight: 300; }
 
 body {

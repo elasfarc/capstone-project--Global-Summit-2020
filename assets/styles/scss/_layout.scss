@@ -1,5 +1,5 @@
 .header {
-    height: 100vh;
+    height: 80vh;
     position: relative;
     &-wrapper {
         @include border;
@@ -9,7 +9,7 @@
         // transform: translate(-20%,-50%);
         //@include d-flex();
         //flex-direction: column;
-        height: 75%;
+        height: 82%;
         padding: 0 18px;
         
     }
@@ -18,7 +18,7 @@
         &-sub {
             color: $color-decoration;
             text-transform: capitalize;
-            font-size: 5.083vw;
+            font-size: 4.683vw;
             font-weight: 300;
             margin-bottom: 1vw;
         }
@@ -26,7 +26,7 @@
             color: $color-decoration;
             text-transform: uppercase;
             font-family: $font-cocogoose-reg;
-            font-size: 7.306vw;
+            font-size: 6.906vw;
             line-height: 1;
 
             .newline {
@@ -40,7 +40,7 @@
         background-color: #F7F7F7;
         //width: 90.875vw;
         //text-align: justify;
-        font-size: 3.490vw;
+        font-size: 3.090vw;
         padding: 2.041vw;
         margin: 3.41vw 0;
     }
@@ -50,11 +50,11 @@
         &-date {
             font-family: $font-cocogoose-reg;
             letter-spacing: 1px;
-            font-size: 4.912vw;
+            font-size: 4.512vw;
             //font-size: 1.4em;
         }
         &-location {
-           font-size: 3.512vw;
+           font-size: 3.112vw;
             font-weight: 300;
         }
     }
