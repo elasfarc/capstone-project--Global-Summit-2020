@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 p {
   font-family: "Cocogoose Pro", sans-serif;
   font-size: 100px; }
