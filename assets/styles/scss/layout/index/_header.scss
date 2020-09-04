@@ -1,25 +1,28 @@
 .header {
-  height: 80vh;
-  position: relative;
+  height: 60vh;
+  //height: 150vw;
+  //position: relative;
 
   &-wrapper {
+    margin-top: 20vw;
     @include border;
     //max-width: 700px;
-    position: absolute;
+    //position: absolute;
     top: 18%;
     left: 0;
-     transform: translate(0,-8%);
-    //@include d-flex();
-    //flex-direction: column;
-    height: 82%;
-    padding: 0 18px;
+     //transform: translate(0,-8%);
+    @include d-flex(space-evenly);
+    flex-direction: column;
+    //height: 100%;
+    //padding: 0 18px;
+    padding: 04.369vw;
   }
 
   &-main {
     &-sub {
       color: $color-decoration;
       text-transform: capitalize;
-      font-size: 4.483vw;
+      font-size: 3.0vh;
       font-weight: 300;
       margin-bottom: 1vw;
     }
@@ -28,7 +31,7 @@
       color: $color-decoration;
       text-transform: uppercase;
       font-family: $font-cocogoose-reg;
-      font-size: 6.706vw;
+      font-size: 3.6vh;
       line-height: 1;
 
       .newline {
@@ -42,21 +45,21 @@
     background-color: #f7f7f7;
     //width: 90.875vw;
     //text-align: justify;
-    font-size: 2.89vw;
-    padding: 2.041vw;
-    margin: 3.41vw 0;
+    font-size: 1.92vh;
+    padding: 0.9vh;
+    margin: 2.56vh 0;
   }
 
   &-spacetime {
     &-date {
       font-family: $font-cocogoose-reg;
       letter-spacing: 1px;
-      font-size: 4.312vw;
+      font-size: 1.992vh;
       //font-size: 1.4em;
     }
 
     &-location {
-      font-size: 2.912vw;
+      font-size: 1.16vh;
       font-weight: 300;
     }
   }
