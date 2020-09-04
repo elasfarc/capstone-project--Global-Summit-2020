@@ -4,11 +4,11 @@
 
   &-wrapper {
     @include border;
-
+    //max-width: 700px;
     position: absolute;
     top: 18%;
     left: 0;
-    // transform: translate(-20%,-50%);
+     transform: translate(0,-8%);
     //@include d-flex();
     //flex-direction: column;
     height: 82%;
@@ -19,7 +19,7 @@
     &-sub {
       color: $color-decoration;
       text-transform: capitalize;
-      font-size: 4.683vw;
+      font-size: 4.483vw;
       font-weight: 300;
       margin-bottom: 1vw;
     }
@@ -28,7 +28,7 @@
       color: $color-decoration;
       text-transform: uppercase;
       font-family: $font-cocogoose-reg;
-      font-size: 6.906vw;
+      font-size: 6.706vw;
       line-height: 1;
 
       .newline {
@@ -42,7 +42,7 @@
     background-color: #f7f7f7;
     //width: 90.875vw;
     //text-align: justify;
-    font-size: 3.09vw;
+    font-size: 2.89vw;
     padding: 2.041vw;
     margin: 3.41vw 0;
   }
@@ -51,12 +51,12 @@
     &-date {
       font-family: $font-cocogoose-reg;
       letter-spacing: 1px;
-      font-size: 4.512vw;
+      font-size: 4.312vw;
       //font-size: 1.4em;
     }
 
     &-location {
-      font-size: 3.112vw;
+      font-size: 2.912vw;
       font-weight: 300;
     }
   }
