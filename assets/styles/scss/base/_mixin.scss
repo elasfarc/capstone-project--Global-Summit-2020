@@ -27,7 +27,7 @@
   align-items: $alienValue;
 }
 
-%tenPerCent-border-B{
+%tenPerCent-border-B {
   content: '';
   display: block;
   border-bottom: 4px solid $color-decoration;
@@ -37,20 +37,16 @@
 }
 
 @mixin mainProgram-card-background($bg-color: #3c3f46) {
-
   background-color: $bg-color;
   background-image: url(../../imgs/texture.svg);
   width: 4;
   height: 4;
   fill-opacity: 4;
-  
 }
 %mainProgram-card-background {
-
   background-color: #3c3f46;
   background-image: url(../../imgs/texture.svg);
   width: 4;
   height: 4;
   fill-opacity: 4;
-  
 }

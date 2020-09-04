@@ -6,6 +6,7 @@
 
 .main-program {
   @include mainProgram-card-background($color-primary);
+
   color: white;
   //@include d-flex(flex-start,center);
   //flex-direction: column;
@@ -15,7 +16,7 @@
 
   &-heading {
     //margin-bottom: 60px;
-    margin-bottom: 10.190vw;
+    margin-bottom: 10.19vw;
 
     &::after {
       @extend %tenPerCent-border-B;
@@ -41,7 +42,7 @@
       @include d-flex(space-around, center);
       //padding: 0 10px;
       text-align: left;
-      border-radius: 5px;
+      border-radius: 2px;
 
       h4 {
         color: $color-decoration;
@@ -64,7 +65,6 @@
   &-btn {
     width: 60%;
     height: 60px;
-
     font-family: $font-cocogoose-100;
     font-size: 0.9rem;
     background-color: $color-decoration;
@@ -82,5 +82,73 @@
 
   &-footer {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-program img {
+    //width: 100px;
+    width: 4.316vw;
+  }
+
+  .main-program {
+    padding: 2.658vw 0;
+
+    &-heading {
+      //margin-bottom: 60px;
+      margin-bottom: 3.19vw;
+      font-size: 13px;
+
+      &::after {
+        width: 3%;
+      }
+    }
+
+    &-cardWraper {
+      flex-direction: row;
+      width: 85%;
+      height: 15%;
+      margin: 0 auto;
+    }
+
+    .main-program-card {
+      max-height: 18.408vw;
+      width: 100%;
+      padding: 0;
+      margin-right: 4px;
+      margin-bottom: 3.641vw;
+
+      @include d-flex(center, center);
+
+      flex-direction: column;
+      text-align: left;
+
+      &:hover {
+        margin-right: 0;
+        border: 5px solid white;
+        transform: scale(1.05);
+      }
+
+      h4 {
+        color: $color-decoration;
+        margin-right: 0;
+        font-size: 2vw;
+      }
+
+      .card-description {
+        width: 90%; //atention here // // // // // / /
+        padding: 2vw 0;
+        font-size: 10px;
+      }
+    }
+    &-btn {
+      display: none;
+    }
+    &-footer {
+      text-transform: uppercase;
+      color: $color-sec;
+      display: block;
+      font-size: 10px;
+    }
   }
 }

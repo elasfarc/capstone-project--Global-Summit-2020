@@ -1,13 +1,11 @@
 .featuredSpeakers {
-
   color: white;
- 
+
   img {
     width: 300px;
   }
 
   &-heading {
-  
     text-align: center;
     margin: 30px 0;
 
@@ -24,6 +22,7 @@
 
     &-card {
       @include d-flex(flex-start, start);
+
       padding: 15px 15px 0;
       //height: 160px;
       height: 40.506vw;
@@ -32,7 +31,6 @@
         order: 2;
         margin-left: 10vw;
         height: 80%;
-       
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -46,21 +44,21 @@
             width: 10%;
             padding-top: 1.2vw;
             border-bottom: 4px solid $color-sec;
-
           }
+
           &-1 {
             //font-size: 1rem;
             font-size: 4.051vw;
-            letter-spacing: .8px;
+            letter-spacing: 0.8px;
             padding-bottom: 3px;
           }
+
           &-2 {
             //font-size: .89rem;
             //padding-bottom: 10px;
             font-size: 3.595vw;
             color: $color-decoration;
           }
-
         }
 
         .name-about-bottom {
@@ -71,23 +69,18 @@
       }
 
       &-left {
-        
-
         .fs-card-img img {
           //width: 100px;
           //height: 100px;
           width: 25.316vw;
           height: 25.316vw;
-
           position: relative;
           left: 13%;
           //top: -40px;
           top: -10.127vw;
-
-          
           object-fit: cover;
-
         }
+
         .checker img {
           //width: 50px;
           //height: 50px;
@@ -114,5 +107,3 @@
   //   }
   // }
 }
-
-

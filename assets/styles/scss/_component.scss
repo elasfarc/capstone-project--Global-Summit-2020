@@ -16,19 +16,17 @@
   filter: invert(99%) sepia(61%) saturate(86%) hue-rotate(219deg) brightness(116%) contrast(100%);
 }
 
-
 .top {
-  background-color: #3E69C3;
+  background-color: #3e69c3;
   background-image: url(http://scarbroughstudios.com/img/codepen.svg);
   background-position: center center;
-  background-size: 500px;  }
+  background-size: 500px;
+}
 
-  .top2 {
-    background-color: #3c3f46;
-    background-image: url(../../imgs/texture.svg);
-    width: 4;
-    height: 4;
-    fill-opacity: 4;
-  }
-
-
+.top2 {
+  background-color: #3c3f46;
+  background-image: url(../../imgs/texture.svg);
+  width: 4;
+  height: 4;
+  fill-opacity: 4;
+}

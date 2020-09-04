@@ -1,30 +1,32 @@
 .footer {
-    height: 19.531vw;
-    text-align: center;
-    @include d-flex(space-around, center);
-    
-    &-left { 
-        width: 50%;
-    
-        &-wraper {
-            width: 70%;
-            margin: 0 auto;
+  height: 19.531vw;
+  text-align: center;
 
-            img {
-                width: 19.531vw;
-            }
-        }
+  @include d-flex(space-around, center);
+
+  &-left {
+    width: 50%;
+
+    &-wraper {
+      width: 70%;
+      margin: 0 auto;
+
+      img {
+        width: 19.531vw;
+      }
     }
+  }
 
-    &-right { 
-        width: 50%;
-        &-wraper {
-            width: 70%;
-            margin: 0 auto;
+  &-right {
+    width: 50%;
 
-            p {
-                font-size: 1.302vw;
-            }
-        }
+    &-wraper {
+      width: 70%;
+      margin: 0 auto;
+
+      p {
+        font-size: 1.302vw;
+      }
     }
+  }
 }
