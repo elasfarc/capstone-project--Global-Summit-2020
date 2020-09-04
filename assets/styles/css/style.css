@@ -16,9 +16,15 @@ body {
   padding-top: 10px; }
 
 .header {
-  height: 60vh; }
+  height: 70vh;
+  background-color: #e2e2e2; }
+  .header-top-img {
+    height: 120px;
+    width: 100%;
+    background-image: linear-gradient(to left top, white, rgba(0, 0, 0, 0.25)), url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
+    background-size: cover;
+    background-position: center; }
   .header-wrapper {
-    margin-top: 20vw;
     border: 1px solid green;
     top: 18%;
     left: 0;
@@ -235,6 +241,19 @@ body {
 
 .white-filter {
   filter: invert(99%) sepia(61%) saturate(86%) hue-rotate(219deg) brightness(116%) contrast(100%); }
+
+.top {
+  background-color: #3E69C3;
+  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+  background-position: center center;
+  background-size: 500px; }
+
+.top2 {
+  background-color: #3c3f46;
+  background-image: url(../../imgs/texture.svg);
+  width: 4;
+  height: 4;
+  fill-opacity: 4; }
 
 body {
   background-color: #f9f9f9; }

@@ -1,10 +1,33 @@
 .header {
-  height: 60vh;
+  height: 70vh;
   //height: 150vw;
   //position: relative;
+ // @include mainProgram-card-background(white);
+ background-color: #e2e2e2;
+ 
+  &-top-img { 
+    height: 120px;
+     width: 100%;
+    
+     background-image:
+     linear-gradient(
+       to left top,
+       rgba(#fff, 1),
+       rgba(0, 0, 0, 0.25)
+     ),
+     url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
+    background-size: cover;
+    background-position: center;
+     
+    // img {
+    // height: 120px;
+    // width: 100%;
+    // object-fit: cover;
+    // }
+  }
 
   &-wrapper {
-    margin-top: 20vw;
+    //margin-top: 20vw;
     @include border;
     //max-width: 700px;
     //position: absolute;
