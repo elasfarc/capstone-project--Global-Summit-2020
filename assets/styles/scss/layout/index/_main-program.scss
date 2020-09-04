@@ -1,6 +1,7 @@
 
 .main-program img {
-  width: 100px;
+  //width: 100px;
+  width: 10.316vw;
 }
 
 .main-program {
@@ -9,10 +10,12 @@
   //@include d-flex(flex-start,center);
   //flex-direction: column;
   text-align: center;
-  padding: 50px 0;
+  //@include: 50px 0;
+  padding: 12.658vw 0;
 
   &-heading {
-    margin-bottom: 60px;
+    //margin-bottom: 60px;
+    margin-bottom: 10.190vw;
 
     &::after {
       @extend %tenPerCent-border-B;
@@ -28,10 +31,12 @@
 
     .main-program-card {
       background-color: $color-sec;
-      height: 150px;
+      //height: 150px;
+      max-height: 100.408vw;
       width: 100%;
       padding: 0;
-      margin-bottom: 15px;
+      //margin-bottom: 15px;
+      margin-bottom: 3.641vw;
 
       @include d-flex(space-around, center);
       //padding: 0 10px;
@@ -40,23 +45,28 @@
 
       h4 {
         color: $color-decoration;
+        margin-right: 3vw;
+        font-size: 3vw;
       }
 
       .card-description {
-        width: 50%; //atention here // // // // // / /
+        //width: 50%; //atention here // // // // // / /
+        padding: 2vw 0;
       }
     }
 
     .card5 {
-      margin-bottom: 50px;
+      //margin-bottom: 50px;
+      margin-bottom: 12.136vw;
     }
   }
 
   &-btn {
     width: 60%;
-    height: 80px;
+    height: 60px;
+
     font-family: $font-cocogoose-100;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     background-color: $color-decoration;
     color: white;
     border: 1px solid $color-decoration;
