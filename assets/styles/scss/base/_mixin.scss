@@ -35,3 +35,22 @@
   margin: 0 auto;
   padding-top: 10px;
 }
+
+@mixin mainProgram-card-background($bg-color: #3c3f46) {
+
+  background-color: $bg-color;
+  background-image: url(../../imgs/texture.svg);
+  width: 4;
+  height: 4;
+  fill-opacity: 4;
+  
+}
+%mainProgram-card-background {
+
+  background-color: #3c3f46;
+  background-image: url(../../imgs/texture.svg);
+  width: 4;
+  height: 4;
+  fill-opacity: 4;
+  
+}

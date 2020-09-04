@@ -5,7 +5,7 @@
 }
 
 .main-program {
-  background-color: $color-primary;
+  @include mainProgram-card-background($color-primary);
   color: white;
   //@include d-flex(flex-start,center);
   //flex-direction: column;
@@ -30,9 +30,9 @@
     margin: 0 auto;
 
     .main-program-card {
-      background-color: $color-sec;
+      @include mainProgram-card-background();
       //height: 150px;
-      max-height: 100.408vw;
+      min-height: 20.408vw;
       width: 100%;
       padding: 0;
       //margin-bottom: 15px;

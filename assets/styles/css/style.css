@@ -60,6 +60,10 @@ body {
 
 .main-program {
   background-color: #272a31;
+  background-image: url(../../imgs/texture.svg);
+  width: 4;
+  height: 4;
+  fill-opacity: 4;
   color: white;
   text-align: center;
   padding: 12.658vw 0; }
@@ -73,8 +77,12 @@ body {
     width: 90%;
     margin: 0 auto; }
     .main-program-cardWraper .main-program-card {
-      background-color: #d3d3d3;
-      max-height: 100.408vw;
+      background-color: #3c3f46;
+      background-image: url(../../imgs/texture.svg);
+      width: 4;
+      height: 4;
+      fill-opacity: 4;
+      min-height: 20.408vw;
       width: 100%;
       padding: 0;
       margin-bottom: 3.641vw;
