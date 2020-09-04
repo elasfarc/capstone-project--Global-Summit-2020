@@ -56,7 +56,7 @@ body {
     font-weight: 300; }
 
 .main-program img {
-  width: 10.316vw; }
+  width: 7.316vw; }
 
 .main-program {
   background-color: #272a31;
@@ -170,7 +170,7 @@ body {
   flex-direction: column; }
   .partner-top {
     color: #d3d3d3;
-    margin: 4vw 0; }
+    margin: 4vw 0 6vw; }
     .partner-top::after {
       width: 40%; }
   .partner-bottom {
@@ -198,11 +198,35 @@ body {
 .pbi-5 {
   grid-area: p5; }
 
+.footer {
+  height: 19.531vw;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .footer-left {
+    width: 50%; }
+    .footer-left-wraper {
+      width: 70%;
+      margin: 0 auto; }
+      .footer-left-wraper img {
+        width: 19.531vw; }
+  .footer-right {
+    width: 50%; }
+    .footer-right-wraper {
+      width: 70%;
+      margin: 0 auto; }
+      .footer-right-wraper p {
+        font-size: 1.302vw; }
+
 .checkers {
   height: 200px;
   width: 200px;
   background-image: conic-gradient(black 0, black 90deg, white 90deg, white 180deg, black 180deg, black 270deg, white 270deg, white 360deg);
   background-size: 2rem 2rem; }
+
+.white-filter {
+  filter: invert(99%) sepia(61%) saturate(86%) hue-rotate(219deg) brightness(116%) contrast(100%); }
 
 body {
   background-color: #f9f9f9; }

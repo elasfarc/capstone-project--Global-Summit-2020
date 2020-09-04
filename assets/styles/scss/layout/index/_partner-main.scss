@@ -12,7 +12,7 @@
 
     &-top {
         color: $color-sec;
-        margin: 4vw 0;
+        margin: 4vw 0 6vw;
         &::after {
             @extend %tenPerCent-border-B;
             width: 40%;
