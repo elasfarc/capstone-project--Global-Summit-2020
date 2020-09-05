@@ -34,9 +34,21 @@
 
 @media screen and (min-width: 768px) {
     .footer {
-        max-height: 176px;
-        min-height: 176px;
-        min-width: 1035px;
-        max-width: 1035px;
+        max-height: 150px;
+        min-height: 150px;
+        text-align: left;
+
+        &-right {
+            width: 50%;
+        
+            &-wraper {
+              width: 90%;
+              margin: 0 auto;
+        
+              p {
+                font-size: 1.802vw;
+              }
+            }
+          }
     }
 }

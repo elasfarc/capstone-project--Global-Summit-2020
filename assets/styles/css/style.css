@@ -130,7 +130,7 @@ body {
     padding: 2.658vw 0; }
     .main-program-heading {
       margin-bottom: 3.19vw;
-      font-size: 13px; }
+      font-size: 80%; }
       .main-program-heading::after {
         width: 3%; }
     .main-program-cardWraper {
@@ -314,8 +314,12 @@ body {
     max-width: 1035px;
     justify-content: center; }
     .partner-top {
-      margin: 0 0 1vw;
-      font-size: 80%; }
+      margin: 0 0 1.5vw;
+      font-size: 70%; }
+      .partner-top::after {
+        width: 40%;
+        padding-top: 0.6vw;
+        border-bottom: 2px solid #ec5242; }
     .partner-bottom {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
@@ -352,10 +356,16 @@ body {
 
 @media screen and (min-width: 768px) {
   .footer {
-    max-height: 176px;
-    min-height: 176px;
-    min-width: 1035px;
-    max-width: 1035px; } }
+    max-height: 150px;
+    min-height: 150px;
+    text-align: left; }
+    .footer-right {
+      width: 50%; }
+      .footer-right-wraper {
+        width: 90%;
+        margin: 0 auto; }
+        .footer-right-wraper p {
+          font-size: 1.802vw; } }
 .checkers {
   height: 200px;
   width: 200px;
