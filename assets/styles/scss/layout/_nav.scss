@@ -62,7 +62,7 @@
             &-left {
                
                 &-wraper {
-                    
+                    margin-left: 40px;
                     .nav-brand {
                         height: 40px;
                     }
@@ -71,14 +71,32 @@
 
             &-right {
                 &-wraper {
-                    
+                
                     display: inline-flex;
+                    font-family: $font-cocogoose-100;
+                    
 
+                    .here {
+                        color: $color-decoration;
+                        border: 0.1px solid $color-decoration;
+                    }
                     .w-nav-link {
-                        padding: 0 30px;
+                        padding: 5px 30px;
+                        //display: block;
+
+                        // &:active{
+                        //     border: 0.1px solid $color-decoration;
+                        //     font-size: 90%;
+                        //     padding-left:33px;
+                           
+                        // }
+                        &:hover {
+                            color: $color-decoration;
+                            
+                        }
 
                         &:last-child {
-                            padding-right: 50px;
+                            margin-right: 20px;
                         }
                     }
                 }

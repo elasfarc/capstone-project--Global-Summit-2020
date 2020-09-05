@@ -64,14 +64,22 @@ a {
         justify-content: space-between;
         align-items: center;
         font-size: 18px; }
-        .nav .navbar-white-left-wraper .nav-brand {
-          height: 40px; }
+        .nav .navbar-white-left-wraper {
+          margin-left: 40px; }
+          .nav .navbar-white-left-wraper .nav-brand {
+            height: 40px; }
         .nav .navbar-white-right-wraper {
-          display: inline-flex; }
+          display: inline-flex;
+          font-family: "Cocogoose Pro", sans-serif; }
+          .nav .navbar-white-right-wraper .here {
+            color: #ec5242;
+            border: 0.1px solid #ec5242; }
           .nav .navbar-white-right-wraper .w-nav-link {
-            padding: 0 30px; }
+            padding: 5px 30px; }
+            .nav .navbar-white-right-wraper .w-nav-link:hover {
+              color: #ec5242; }
             .nav .navbar-white-right-wraper .w-nav-link:last-child {
-              padding-right: 50px; } }
+              margin-right: 20px; } }
 .header {
   height: 70vh;
   background-color: #e2e2e2; }
