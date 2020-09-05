@@ -95,15 +95,96 @@
     }
   }
 
-  // &-card {
-  //   @include border;
-
-  //   &-right {
-  //     @include border;
-
-  //     img {
-
-  //     }
-  //   }
-  // }
 }
+
+@media screen and (min-width: 768px) {
+
+  .featuredSpeakers {
+    &-heading {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 80%;
+
+    }
+    &-speakers {
+      grid-template-columns: 1fr 1fr;
+      
+      &-card {
+        max-height: 150px;
+        padding: 20px 0 50px 50px;
+        //@include border;
+
+        &-right {
+          margin-left: 5vw;
+          height: 100%;
+          justify-content: flex-start;
+
+          .fs-card-right-top {
+            &::after {
+              width: 10%;
+              padding-top: 0.6vw;
+              border-bottom: 2px solid $color-sec;
+            }
+  
+            &-1 {
+              //font-size: 1rem;
+              font-size: 1.551vw;
+              letter-spacing: 0.8px;
+              padding-bottom: 3px;
+            }
+  
+            &-2 {
+              //font-size: .89rem;
+              //padding-bottom: 10px;
+              font-size: 1.195vw;
+              color: $color-decoration;
+              width: 90%;
+            }
+
+
+          }
+          .name-about-bottom {
+            margin-top: 0.5rem;
+            font-size: 1.135vw;
+            width: 90%;
+            
+          }
+        }
+      }
+  
+    }
+
+  }
+
+
+
+  .featuredSpeakers-speakers-card-left {
+    .fs-card-img img {
+      //width: 100px;
+      //height: 100px;
+      width: 85px;
+      height: 85px;
+      position: relative;
+      left: 13%;
+      top: -30px;
+      //top: -10.127vw;
+      object-fit: cover;
+    }
+
+    .checker img {
+      //width: 50px;
+      //height: 50px;
+      width: 40px;
+      height: 40px;
+
+      &:first-child {
+        display: block;
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+
+  }
+}
+
