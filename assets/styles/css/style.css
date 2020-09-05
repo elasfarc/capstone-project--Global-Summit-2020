@@ -18,6 +18,60 @@ a {
   margin: 0 auto;
   padding-top: 10px; }
 
+.nav {
+  background-color: yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%; }
+  .nav .navbar {
+    display: none; }
+  .nav .burger-menu {
+    margin-left: 30px;
+    margin-top: 1px; }
+    .nav .burger-menu a {
+      color: #3e5353;
+      font-size: 35px; }
+  .nav .b-nav-link,
+  .nav .w-nav-link {
+    text-decoration: none; }
+
+@media screen and (min-width: 768px) {
+  .nav {
+    background-color: white; }
+    .nav .burger-menu {
+      display: none; }
+    .nav .navbar {
+      display: block; }
+      .nav .navbar-black {
+        min-height: 25px;
+        max-height: 25px;
+        background-color: #3e3e3e;
+        color: white;
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .nav .navbar-black .b-nav-link {
+          padding: 0 10px; }
+          .nav .navbar-black .b-nav-link:last-child {
+            padding-right: 50px; }
+      .nav .navbar-white {
+        min-height: 50px;
+        max-height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px; }
+        .nav .navbar-white-left-wraper .nav-brand {
+          height: 40px; }
+        .nav .navbar-white-right-wraper {
+          display: inline-flex; }
+          .nav .navbar-white-right-wraper .w-nav-link {
+            padding: 0 30px; }
+            .nav .navbar-white-right-wraper .w-nav-link:last-child {
+              padding-right: 50px; } }
 .header {
   height: 70vh;
   background-color: #e2e2e2; }
