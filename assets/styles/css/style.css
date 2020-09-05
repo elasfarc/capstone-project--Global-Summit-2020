@@ -458,29 +458,32 @@ a {
       width: 70%;
       margin: 0 auto; }
       .footer-left-wraper img {
-        width: 19.531vw; }
+        width: 100px; }
   .footer-right {
     width: 50%; }
     .footer-right-wraper {
-      width: 70%;
-      margin: 0 auto; }
+      width: 100%;
+      margin: 0 auto;
+      padding-right: 20px; }
       .footer-right-wraper p {
-        font-size: 1.302vw; }
+        font-size: 1.302vw;
+        font-size: 10px; }
 
 @media screen and (min-width: 768px) {
   .footer {
-    max-height: 150px;
-    min-height: 150px;
+    max-height: 100px;
+    min-height: 100px;
     text-align: left; }
+    .footer-left-wraper img {
+      width: 150px; }
     .footer-right {
       width: 50%; }
       .footer-right-wraper {
         width: 90%;
         margin: 0 auto; }
         .footer-right-wraper p {
-          font-size: 1.802vw; } }
+          font-size: 17px; } }
 .other-pages-footer {
-  display: none;
   background-color: #2e2e2e;
   color: #d3d3d3; }
 
