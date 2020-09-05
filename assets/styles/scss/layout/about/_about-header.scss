@@ -1,10 +1,10 @@
 .about-header {
     //height: 85vh;
     position: relative;
-    @include border;
+    margin-bottom: 20px;
     //font-size: 24px;
     &-wrap {
-        @include border;
+        
         //position: absolute;
         top: calc(35% + 0.5vw);
         left: 45%;

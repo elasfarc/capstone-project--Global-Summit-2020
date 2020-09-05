@@ -1,59 +1,64 @@
 .about-2ndSection {
-    background-color: white;
-    @include d-flex(space-around, center);
-   flex-direction: column;
-   //height: 80vh;
-    padding: 20px 0;
-   text-align: center;
-    @extend %border-top-bottom;
+  background-color: white;
+  @include d-flex(space-around, center);
+  flex-direction: column;
+  //height: 80vh;
+  padding: 20px 0;
+  text-align: center;
+  @extend %border-top-bottom;
 
-   &-heading {
+  &-heading {
     text-transform: capitalize;
-    
+
     font-family: $font-cocogoose-100;
     font-size: calc(1.275rem + 0.5vw);
     line-height: 1;
     letter-spacing: 0.5px;
 
+    //after removing height
+    margin-bottom: 25px;
+    margin-top: 25px;
+
     &::after {
-        @extend %tenPerCent-border-B;
-        width: 5%;
-        padding-top: 20px;
+      @extend %tenPerCent-border-B;
+      width: 5%;
+      padding-top: 20px;
     }
-   }
+  }
 
-   &-content {
-       font-size: 14px;
-       line-height: 1.4;
-       width: 80%;
-       max-width: 500px;
+  &-content {
+    font-size: 14px;
+    line-height: 1.4;
+    width: 80%;
+    max-width: 500px;
+    //after removing height
+    margin-bottom: 25px;
+  }
 
-   }
+  &-card {
+    //after removing height
+    margin-bottom: 20px;
+    border: 1px solid $color-sec;
+    width: 400px;
+    @include d-flex(flex-start, center);
+    flex-direction: column;
 
-   &-card {
-       border: 1px solid $color-sec;
-       width:400px;
-       @include d-flex(flex-start, center);
-       flex-direction: column;
+    position: relative;
 
-       position: relative;
+    &-right {
+      &-2 {
+        font-size: 10px;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+      }
+    }
 
-       &-right {
-           &-2 {
-               font-size: 10px;
-                position: absolute;
-                top: 80%;
-                left: 50%;
-                transform: translateX(-50%);
-                border-top: 0.5px solid black;
-                border-bottom: 0.5px solid black;
-                
-           }
-       }
-
-       &-left-img {
-            width: 150px;
-       }
-   }
-
+    &-left-img {
+      width: 150px;
+    }
+  }
 }

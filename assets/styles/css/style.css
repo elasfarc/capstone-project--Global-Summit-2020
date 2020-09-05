@@ -486,9 +486,8 @@ a {
 
 .about-header {
   position: relative;
-  border: 1px solid green; }
+  margin-bottom: 20px; }
   .about-header-wrap {
-    border: 1px solid green;
     top: calc(35% + 0.5vw);
     left: 45%;
     margin-top: 70px; }
@@ -571,7 +570,9 @@ a {
     font-family: "Cocogoose Pro", sans-serif;
     font-size: calc(1.275rem + 0.5vw);
     line-height: 1;
-    letter-spacing: 0.5px; }
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    margin-top: 25px; }
     .about-2ndSection-heading::after {
       width: 5%;
       padding-top: 20px; }
@@ -579,8 +580,10 @@ a {
     font-size: 14px;
     line-height: 1.4;
     width: 80%;
-    max-width: 500px; }
+    max-width: 500px;
+    margin-bottom: 25px; }
   .about-2ndSection-card {
+    margin-bottom: 20px;
     border: 1px solid #d3d3d3;
     width: 400px;
     display: flex;
