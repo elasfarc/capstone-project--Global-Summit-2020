@@ -10,13 +10,17 @@ body {
 a {
   color: inherit; }
 
-.main-program-heading::after, .featuredSpeakers-heading::after, .partner-top::after, .about-header-top-2::after, .about-2ndSection-heading::after {
+.main-program-heading::after, .featuredSpeakers-heading::after, .partner-top::after, .about-header-top-2::after, .about-2ndSection-heading::after, .about-3rdSection-heading::after {
   content: '';
   display: block;
   border-bottom: 4px solid #ec5242;
   width: 10%;
   margin: 0 auto;
   padding-top: 10px; }
+
+.about-2ndSection {
+  border-top: 0.5px solid #d3d3d3;
+  border-bottom: 0.5px solid #d3d3d3; }
 
 .checkers {
   height: 200px;
@@ -598,6 +602,68 @@ a {
     .about-2ndSection-card-left-img {
       width: 150px; }
 
+.about-3rdSection {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0; }
+  .about-3rdSection-heading {
+    font-family: "Cocogoose Pro", sans-serif;
+    font-size: calc(.975rem + 0.5vw);
+    line-height: 1;
+    letter-spacing: 0.5px; }
+    .about-3rdSection-heading::after {
+      width: 5%;
+      padding-top: 10px; }
+  .about-3rdSection-content {
+    margin: 10px 0 30px;
+    font-size: 12px;
+    line-height: 1.4;
+    width: 80%;
+    max-width: 500px; }
+  .about-3rdSection-card {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch; }
+    .about-3rdSection-card > div {
+      width: 280px;
+      height: 140px;
+      background-size: cover;
+      background-position-y: bottom;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      font-family: "COCOGOOSE Regular", sans-serif;
+      cursor: pointer; }
+    .about-3rdSection-card-1 {
+      margin-right: 20px;
+      background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(../../imgs/card1-20_090-1545x1030.jpg); }
+    .about-3rdSection-card-2 {
+      background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(../../imgs/card2ByPalma-Conference-2018-624x351.jpg); }
+    .about-3rdSection-card-text-1 {
+      font-size: 30px;
+      letter-spacing: 2px; }
+    .about-3rdSection-card-text-2 {
+      font-size: 10px;
+      letter-spacing: 1.1px; }
+
+@media screen and (max-width: 768px) {
+  .about-3rdSection-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .about-3rdSection-card > div {
+      width: 320px;
+      height: 180px; }
+
+  .about-3rdSection-card-1 {
+    margin-bottom: 20px;
+    margin-right: 0; } }
 body {
   background-color: #f9f9f9; }
 

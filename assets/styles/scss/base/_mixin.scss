@@ -50,3 +50,8 @@
   height: 4;
   fill-opacity: 4;
 }
+
+%border-top-bottom {
+  border-top: 0.5px solid $color-sec;
+  border-bottom: 0.5px solid $color-sec;
+}
