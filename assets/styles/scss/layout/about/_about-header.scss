@@ -1,5 +1,5 @@
 .about-header {
-    height: 85vh;
+    //height: 85vh;
     position: relative;
     @include border;
     //font-size: 24px;
@@ -71,7 +71,7 @@
 @media screen and (max-width: 768px) {
 
     .about-header {
-        height: calc(85vh - 70px);
+        //height: calc(85vh - 70px);
         position: relative;
         
         &-wrap {

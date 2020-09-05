@@ -2,11 +2,11 @@
     background-color: white;
     @include d-flex(space-around, center);
    flex-direction: column;
-   height: 60vh;
+   //height: 80vh;
     padding: 20px 0;
    text-align: center;
     @extend %border-top-bottom;
-    
+
    &-heading {
     text-transform: capitalize;
     
