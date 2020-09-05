@@ -448,6 +448,10 @@ a {
         margin: 0 auto; }
         .footer-right-wraper p {
           font-size: 1.802vw; } }
+.other-pages-footer {
+  background-color: #2e2e2e;
+  color: #d3d3d3; }
+
 .checkers {
   height: 200px;
   width: 200px;
