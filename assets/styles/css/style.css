@@ -10,7 +10,7 @@ body {
 a {
   color: inherit; }
 
-.main-program-heading::after, .featuredSpeakers-heading::after, .partner-top::after {
+.main-program-heading::after, .featuredSpeakers-heading::after, .partner-top::after, .about-header-top-2::after {
   content: '';
   display: block;
   border-bottom: 4px solid #ec5242;
@@ -477,6 +477,55 @@ a {
   display: none;
   background-color: #2e2e2e;
   color: #d3d3d3; }
+
+.about-header {
+  height: 80vh;
+  position: relative;
+  border: 1px solid green; }
+  .about-header-wrap {
+    border: 1px solid green;
+    top: calc(35% + 0.5vw);
+    left: 45%;
+    margin-top: 70px; }
+  .about-header-top {
+    color: #ec5242;
+    text-align: center; }
+    .about-header-top-1 {
+      text-transform: capitalize;
+      font-size: calc(1.43rem + 0.5vw);
+      font-weight: 300;
+      margin-bottom: 0.3vw; }
+    .about-header-top-2 {
+      text-transform: uppercase;
+      font-family: "COCOGOOSE Regular", sans-serif;
+      font-size: calc(1.875rem + 0.5vw);
+      line-height: 1;
+      letter-spacing: 0.5px;
+      padding-bottom: 40px; }
+      .about-header-top-2::after {
+        width: 5%;
+        padding-top: 20px; }
+  .about-header-middle {
+    height: 150px;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    background-color: white;
+    border: 1px solid #d3d3d3; }
+    .about-header-middle-content {
+      padding: 10px 10px 0 10px;
+      text-align: justify;
+      font-size: 16px; }
+  .about-header-bottom {
+    text-align: center;
+    font-size: 16px; }
+    .about-header-bottom-2 {
+      margin-top: .5vw;
+      font-weight: 700; }
+
+.great-wraper {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 body {
   background-color: #f9f9f9; }

@@ -1,0 +1,114 @@
+.about-header {
+    height: 80vh;
+    position: relative;
+    @include border;
+    //font-size: 24px;
+    &-wrap {
+        @include border;
+        //position: absolute;
+        top: calc(35% + 0.5vw);
+        left: 45%;
+        //transform: translate(-50%, -40%);
+        margin-top: 70px;
+    }
+
+    &-top {
+        
+        color: $color-decoration;
+        text-align: center;
+
+        &-1 {
+            text-transform: capitalize;
+            
+            font-size: calc(1.43rem + 0.5vw);
+            font-weight: 300;
+            margin-bottom: 0.3vw;
+        }
+
+        &-2 {
+            text-transform: uppercase;
+            font-family: $font-cocogoose-reg;
+            font-size: calc(1.875rem + 0.5vw);
+            line-height: 1;
+            letter-spacing: 0.5px;
+            padding-bottom: 40px;
+
+            &::after {
+                @extend %tenPerCent-border-B;
+                width: 5%;
+                padding-top: 20px;
+            }
+        }
+    }
+
+    &-middle {
+        height: 150px;
+        width: 80%;
+        max-width: 700px;
+        margin: 0 auto 40px;
+        background-color: white;
+        border: 1px solid $color-sec;
+        &-content {
+            padding: 10px 10px 0 10px ;
+            text-align: justify;
+            font-size: 16px;
+        }
+    }
+
+    &-bottom {
+        text-align: center;
+        font-size: 16px;
+        &-2 {
+            margin-top: .5vw;
+            font-weight: 700;
+        }
+    }
+
+}
+
+
+//@media screen and (max-width: 768px) {
+
+//     .about-header {
+//         height: 80vh;
+//         position: relative;
+//         @include border;
+//         font-size: 24px;
+//         &-wrap {
+//             @include border;
+//             position: absolute;
+//             top: calc(35% + 0.5vw);
+//             left: 45%;
+//             transform: translate(-50%, -40%);
+//         }
+    
+//         &-top {
+//             color: $color-decoration;
+//             &-1 {
+//                 text-transform: capitalize;
+//                 text-align: center;
+//                 font-size: 30px;
+//                 font-weight: 300;
+//                 margin-bottom: 0.2vw;
+//             }
+    
+//             &-2 {
+//                 text-transform: uppercase;
+//             }
+//         }
+    
+//     }
+
+// }
+
+
+
+
+
+
+
+
+.great-wraper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
