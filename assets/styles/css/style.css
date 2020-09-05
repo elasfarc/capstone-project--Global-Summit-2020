@@ -18,6 +18,28 @@ a {
   margin: 0 auto;
   padding-top: 10px; }
 
+.checkers {
+  height: 200px;
+  width: 200px;
+  background-image: conic-gradient(black 0, black 90deg, white 90deg, white 180deg, black 180deg, black 270deg, white 270deg, white 360deg);
+  background-size: 2rem 2rem; }
+
+.white-filter {
+  filter: invert(99%) sepia(61%) saturate(86%) hue-rotate(219deg) brightness(116%) contrast(100%); }
+
+.top {
+  background-color: #3e69c3;
+  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
+  background-position: center center;
+  background-size: 500px; }
+
+.top2 {
+  background-color: #3c3f46;
+  background-image: url(../../imgs/texture.svg);
+  width: 4;
+  height: 4;
+  fill-opacity: 4; }
+
 .nav-wraper {
   height: 70px; }
 
@@ -452,30 +474,9 @@ a {
         .footer-right-wraper p {
           font-size: 1.802vw; } }
 .other-pages-footer {
+  display: none;
   background-color: #2e2e2e;
   color: #d3d3d3; }
-
-.checkers {
-  height: 200px;
-  width: 200px;
-  background-image: conic-gradient(black 0, black 90deg, white 90deg, white 180deg, black 180deg, black 270deg, white 270deg, white 360deg);
-  background-size: 2rem 2rem; }
-
-.white-filter {
-  filter: invert(99%) sepia(61%) saturate(86%) hue-rotate(219deg) brightness(116%) contrast(100%); }
-
-.top {
-  background-color: #3e69c3;
-  background-image: url(http://scarbroughstudios.com/img/codepen.svg);
-  background-position: center center;
-  background-size: 500px; }
-
-.top2 {
-  background-color: #3c3f46;
-  background-image: url(../../imgs/texture.svg);
-  width: 4;
-  height: 4;
-  fill-opacity: 4; }
 
 body {
   background-color: #f9f9f9; }
