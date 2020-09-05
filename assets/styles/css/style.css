@@ -18,6 +18,9 @@ a {
   margin: 0 auto;
   padding-top: 10px; }
 
+.nav-wraper {
+  height: 70px; }
+
 .nav {
   background-color: yellow;
   position: fixed;
