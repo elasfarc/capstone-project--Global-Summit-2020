@@ -1,10 +1,12 @@
 .nav {
     background-color: yellow;
-    position: fixed;
+    //position: fixed;
+    position: sticky;
     top:0;
     left: 0;
     z-index: 3;
     width: 100%;
+    
     
 
 
