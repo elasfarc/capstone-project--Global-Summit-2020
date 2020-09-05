@@ -84,6 +84,8 @@
                     .here {
                         color: $color-decoration;
                         border: 0.1px solid $color-decoration;
+                        box-sizing: content-box;
+                        padding: 0 10px;
                     }
                     .w-nav-link {
                         padding: 5px 30px;

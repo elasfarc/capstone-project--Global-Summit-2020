@@ -98,7 +98,9 @@ a {
           font-family: "Cocogoose Pro", sans-serif; }
           .nav .navbar-white-right-wraper .here {
             color: #ec5242;
-            border: 0.1px solid #ec5242; }
+            border: 0.1px solid #ec5242;
+            box-sizing: content-box;
+            padding: 0 10px; }
           .nav .navbar-white-right-wraper .w-nav-link {
             padding: 5px 30px; }
             .nav .navbar-white-right-wraper .w-nav-link:hover {
