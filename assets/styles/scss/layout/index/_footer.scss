@@ -30,3 +30,13 @@
     }
   }
 }
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        max-height: 176px;
+        min-height: 176px;
+        min-width: 1035px;
+        max-width: 1035px;
+    }
+}
