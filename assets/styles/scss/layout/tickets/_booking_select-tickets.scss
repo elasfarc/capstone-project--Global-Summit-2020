@@ -1,0 +1,111 @@
+.booking-select-tickets {
+    @include d-flex(center, center);
+    flex-direction: column;
+    margin: 40px 0;
+  
+    &-heading {
+      font-family: $font-cocogoose-100;
+      font-size: calc(0.975rem + 0.5vw);
+      line-height: 1;
+      letter-spacing: 0.5px;
+  
+      margin-bottom: 20px;
+  
+      &::after {
+        @extend %tenPerCent-border-B;
+        width: 20%;
+        padding-top: 10px;
+      }
+    }
+  
+    &-descriptionBox {
+      //width: 60%;
+      @include d-flex(flex-start, center);
+      font-size: 8px;
+  
+      //border
+      border: 0.5px solid $color-sec;
+      border-radius: 10px;
+  
+      margin-bottom: 25px;
+      padding: 10px;
+  
+      > * {
+          margin-left: 10px;
+      }
+      .diamond {
+        width: 10px;
+        height: 10px;
+        background-color: $color-decoration;
+        transform: rotate(45deg);
+  
+      }
+  
+      .step1 {
+        color: $color-decoration;
+        text-transform: uppercase;
+        font-family: $font-cocogoose-reg;
+      }
+  
+      .step1-p {
+        font-size: 12px;
+      }
+    }
+  
+    &-table {
+      max-width: 100%;
+      overflow-x: scroll;
+  
+      // margin: 100px 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border: 5px solid $color-decoration;
+      border-image: repeating-linear-gradient( -45deg,$color-primary 10px, $color-decoration 20px, $color-sec 30px,$color-primary 40px,$color-decoration 50px) 10;
+  
+      font-size: 12px;
+  
+      > .cell {
+        padding: 8px 4px;
+      
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        text-align: center;
+      }
+  
+      > .table-head {
+          font-weight: bold;
+          font-size: 105%;
+      }
+    }
+  }
+  
+  // @media screen and (min-width: 768px) {
+  //     .booking-select-tickets {
+  //         //height: 80vh;
+  //         //position: relative;
+  //     &-table {
+  //         //max-width: 80%;
+  
+  //         //overflow-x:scroll;
+  
+  //        // position: relative;
+  //         left: 10%;
+  //         top: 20%;
+  //         //transform: translateX(-50%, -50%);
+  
+  //         margin: 100px 0;
+  //         display: grid;
+  //         grid-template-columns: repeat(5, 1fr);
+  //         border: 3px solid blue;
+  
+  //         font-size: 12px;
+  
+  //         > span {
+  //             padding: 8px 4px;
+  //             border: 1px solid black;
+  //         }
+  //     }
+  
+  // }
+  // }
+  
