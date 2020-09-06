@@ -84,7 +84,33 @@
     }
   }
   
+//diamond-big
 
+.diamond-big {
+  width: 30px; 
+  height: 30px;
+
+  
+  //padding: 50px 0;
+
+
+  position: absolute;
+  left: 50%;
+
+  transform: rotate(45deg) translate(-50%);
+
+  background-color: $color-decoration;
+
+  &-content {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+   left:30%;
+    transform: rotate(45deg),
+    
+  }
+}
 
 
 //mobile
@@ -106,7 +132,7 @@
 
         > .lastcol {
           //so on mobile when .table max-width : 90% not Xoverflow
-          width: 80%;
+          //width: 90%;
         }
       }
     }

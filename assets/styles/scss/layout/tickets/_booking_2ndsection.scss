@@ -1,11 +1,16 @@
 .booking-section2 {
     background-color: white;
     margin-bottom: 0;
+    
     //section-2 extra margin 
     > * {margin-bottom: 30px;}
     //"select your lunch" extra margin-top
     .mt {
         margin-top: 20px;
+    }
+
+    h1.mt {
+        margin-top: 50px;
     }
 }
 

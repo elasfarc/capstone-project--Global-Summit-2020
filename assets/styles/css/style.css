@@ -723,15 +723,28 @@ a {
     .booking-select-tickets-table > .lastrow {
       border-bottom-style: none; }
 
+.diamond-big {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translate(-50%);
+  background-color: #ec5242; }
+  .diamond-big-content {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: rotate(45deg); }
+
 @media screen and (max-width: 768px) {
   .booking-select-tickets-descriptionBox {
     font-size: 8px; }
     .booking-select-tickets-descriptionBox .step1-p {
       font-size: 8px; }
   .booking-select-tickets-table {
-    max-width: 90%; }
-    .booking-select-tickets-table > .lastcol {
-      width: 80%; } }
+    max-width: 90%; } }
 .booking-section2 {
   background-color: white;
   margin-bottom: 0; }
@@ -739,6 +752,8 @@ a {
     margin-bottom: 30px; }
   .booking-section2 .mt {
     margin-top: 20px; }
+  .booking-section2 h1.mt {
+    margin-top: 50px; }
 
 .booking-section2-selectLunchBox {
   text-align: center;
