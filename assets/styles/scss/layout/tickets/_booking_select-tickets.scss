@@ -102,7 +102,12 @@
         }
       }
       &-table {
-        max-width: 100%;
+        max-width: 90%;
+
+        > .lastcol {
+          //so on mobile when .table max-width : 90% not Xoverflow
+          width: 80%;
+        }
       }
     }
   }
