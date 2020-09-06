@@ -1,4 +1,5 @@
 .booking-select-tickets {
+ 
     @include d-flex(center, center);
     flex-direction: column;
     margin: 40px 0;
@@ -53,8 +54,8 @@
     }
   
     &-table {
-      max-width: 100%;
-      overflow-x: scroll;
+      max-width: 80%;
+      //overflow-x: scroll;
   
       // margin: 100px 0;
       display: grid;
@@ -76,36 +77,33 @@
           font-weight: bold;
           font-size: 105%;
       }
+      
+      > .lastrow {
+        border-bottom-style: none;
+      }
     }
   }
   
-  // @media screen and (min-width: 768px) {
-  //     .booking-select-tickets {
-  //         //height: 80vh;
-  //         //position: relative;
-  //     &-table {
-  //         //max-width: 80%;
+
+
+
+//mobile
+
+   @media screen and (max-width: 768px) {
+    .booking-select-tickets {
+    
+      &-descriptionBox {
+        
+        font-size: 8px;
+    
   
-  //         //overflow-x:scroll;
-  
-  //        // position: relative;
-  //         left: 10%;
-  //         top: 20%;
-  //         //transform: translateX(-50%, -50%);
-  
-  //         margin: 100px 0;
-  //         display: grid;
-  //         grid-template-columns: repeat(5, 1fr);
-  //         border: 3px solid blue;
-  
-  //         font-size: 12px;
-  
-  //         > span {
-  //             padding: 8px 4px;
-  //             border: 1px solid black;
-  //         }
-  //     }
-  
-  // }
-  // }
+        .step1-p {
+          font-size: 8px;
+        }
+      }
+      &-table {
+        max-width: 100%;
+      }
+    }
+  }
   

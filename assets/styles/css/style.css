@@ -10,7 +10,7 @@ body {
 a {
   color: inherit; }
 
-.main-program-heading::after, .featuredSpeakers-heading::after, .partner-top::after, .about-header-top-2::after, .about-2ndSection-heading::after, .about-3rdSection-heading::after {
+.main-program-heading::after, .featuredSpeakers-heading::after, .partner-top::after, .about-header-top-2::after, .about-2ndSection-heading::after, .about-3rdSection-heading::after, .booking-select-tickets-heading::after {
   content: '';
   display: block;
   border-bottom: 4px solid #ec5242;
@@ -667,6 +667,68 @@ a {
   .about-3rdSection-card-1 {
     margin-bottom: 20px;
     margin-right: 0; } }
+.booking-select-tickets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0; }
+  .booking-select-tickets-heading {
+    font-family: "Cocogoose Pro", sans-serif;
+    font-size: calc(0.975rem + 0.5vw);
+    line-height: 1;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px; }
+    .booking-select-tickets-heading::after {
+      width: 20%;
+      padding-top: 10px; }
+  .booking-select-tickets-descriptionBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 8px;
+    border: 0.5px solid #d3d3d3;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px; }
+    .booking-select-tickets-descriptionBox > * {
+      margin-left: 10px; }
+    .booking-select-tickets-descriptionBox .diamond {
+      width: 10px;
+      height: 10px;
+      background-color: #ec5242;
+      transform: rotate(45deg); }
+    .booking-select-tickets-descriptionBox .step1 {
+      color: #ec5242;
+      text-transform: uppercase;
+      font-family: "COCOGOOSE Regular", sans-serif; }
+    .booking-select-tickets-descriptionBox .step1-p {
+      font-size: 12px; }
+  .booking-select-tickets-table {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 5px solid #ec5242;
+    border-image: repeating-linear-gradient(-45deg, #272a31 10px, #ec5242 20px, #d3d3d3 30px, #272a31 40px, #ec5242 50px) 10;
+    font-size: 12px; }
+    .booking-select-tickets-table > .cell {
+      padding: 8px 4px;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      text-align: center; }
+    .booking-select-tickets-table > .table-head {
+      font-weight: bold;
+      font-size: 105%; }
+    .booking-select-tickets-table > .lastrow {
+      border-bottom-style: none; }
+
+@media screen and (max-width: 768px) {
+  .booking-select-tickets-descriptionBox {
+    font-size: 8px; }
+    .booking-select-tickets-descriptionBox .step1-p {
+      font-size: 8px; }
+  .booking-select-tickets-table {
+    max-width: 100%; } }
 body {
   background-color: #f9f9f9; }
 
