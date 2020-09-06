@@ -278,13 +278,14 @@ a {
         width: 90%;
         padding: 2vw 0;
         font-size: 10px; }
-    .main-program-btn {
-      display: none; }
     .main-program-footer {
       text-transform: uppercase;
       color: #d3d3d3;
       display: block;
-      font-size: 10px; } }
+      font-size: 10px; }
+
+  .hideME {
+    display: none; } }
 .featuredSpeakers {
   color: white; }
   .featuredSpeakers img {
@@ -729,6 +730,45 @@ a {
       font-size: 8px; }
   .booking-select-tickets-table {
     max-width: 100%; } }
+.booking-section2 {
+  background-color: white;
+  margin-bottom: 0; }
+  .booking-section2 > * {
+    margin-bottom: 30px; }
+  .booking-section2 .mt {
+    margin-top: 20px; }
+
+.booking-section2-selectLunchBox {
+  text-align: center;
+  min-width: 70%; }
+  .booking-section2-selectLunchBox-wrap {
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d3;
+    font-size: 12px; }
+  .booking-section2-selectLunchBox-top {
+    background-color: #f6f6f6;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .booking-section2-selectLunchBox-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px; }
+    .booking-section2-selectLunchBox-bottom-option {
+      padding: .6vw 1vw; }
+  .booking-section2-selectLunchBox .booking-btn {
+    width: 100px;
+    height: 24px; }
+
+@media screen and (max-width: 768px) {
+  .reduce-font {
+    max-width: 90%;
+    font-size: 8px; }
+    .reduce-font-p {
+      text-align: center;
+      max-width: 70%; } }
 body {
   background-color: #f9f9f9; }
 
