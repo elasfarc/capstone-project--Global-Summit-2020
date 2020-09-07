@@ -1,30 +1,40 @@
 .nav-wraper {
-    height: 70px;
+    height: 50px;
 }
 .nav {
-    background-color: yellow;
-    position: fixed;
+
+    //hide desktop nav by default
+    display: none;
+
+    background-color: yellowgreen;
+    
+
+
     //position: sticky;
     top:0;
     left: 0;
-    z-index: 3;
+    //z-index: 3;
     width: 100%;
     
     
 
 
   .navbar {
-    display: none;
-  }
+    display: block;
 
-  .burger-menu {
-    margin-left: 30px;
-    margin-top: 1px;
-    a {
-      color: rgb(62, 83, 83);
-      font-size: 35px;
+    &-black {
+        display: none;
+    }
+
+
+    &-white {
+        &-left {display: none;}
+
+
     }
   }
+
+
   .b-nav-link,
   .w-nav-link {
       text-decoration: none;
@@ -32,7 +42,13 @@
 }
 
 @media screen and (min-width: 768px) {
+    // hide burger >MD
+    .burger-wrap {
+        display: none;
+    }
   .nav {
+      display:block;
+
       background-color: white;
     .burger-menu {
       display: none;
@@ -113,3 +129,117 @@
     }
   }
 }
+
+
+
+//burger wrap so it has its own height when burger-menu itself is fixed
+.burger-wrap {
+     height: 100px;
+
+     position: relative;
+     z-index: 200;
+}
+
+
+
+.burger-menu {
+//display: none;
+
+    //burger-menu FIXED ...
+    // removing fixed for the parent nav 
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    top:0%;
+    left: 0;
+
+    //burger border
+    border: 1px solid $color-sec; 
+    
+
+    //margin-left: 30px;
+    padding : 15px;
+    //margin-top: 1px;
+    margin-bottom: 300px;
+
+
+    a {
+      color: rgb(62, 83, 83);
+      font-size: 35px;
+    }
+  }
+
+
+
+  //mobile nav styling third child 
+
+  .mobile-navbar-white-right-wraper{  
+    @include d-flex(center, center);
+    width: 100vw;
+    height: 100vh;
+    background-color: #1f1d1d;
+    position: fixed;
+    //right: -50vw;
+    //display: flex;
+    // z-index: 200;
+    top: -100vh;
+    
+    transition: top .4s ;
+
+
+    //ul 
+    .nav-list {
+        @include d-flex(center, center);
+        flex-direction: column;
+
+        list-style: none;
+    }
+
+    
+    .nav-list {
+       
+  }
+ 
+
+
+   //link<a>
+    //&-mobile-w-nav-link {
+    .nav-list-link {
+        @include border;
+                color: white;
+                font-size: 50px;
+                font-family: $font-cocogoose-100;
+
+                display: block;
+                margin-top: 5px;
+                //color: white !important;
+                text-decoration: none;
+                display: block;
+                margin: 20px;
+                text-align: center;
+                transition: all .5s;
+            &:hover {
+                color: $color-decoration;
+                //line-height: 3px;
+                letter-spacing: 1px;
+            }
+    }
+    
+  }
+    //mobile nav styling third child 
+
+//check-box
+.checkbox:checked ~ .mobile-navbar-white-right-wraper {
+        top: 0;
+    }
+
+
+  //burger DESKTOP (HIDE)
+
+  @media screen and (min-width: 768px) {
+
+    .burger-menu {
+        display: none;
+    }
+  }

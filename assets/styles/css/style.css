@@ -45,29 +45,30 @@ a {
   fill-opacity: 4; }
 
 .nav-wraper {
-  height: 70px; }
+  height: 50px; }
 
 .nav {
-  background-color: yellow;
-  position: fixed;
+  display: none;
+  background-color: yellowgreen;
   top: 0;
   left: 0;
-  z-index: 3;
   width: 100%; }
   .nav .navbar {
-    display: none; }
-  .nav .burger-menu {
-    margin-left: 30px;
-    margin-top: 1px; }
-    .nav .burger-menu a {
-      color: #3e5353;
-      font-size: 35px; }
+    display: block; }
+    .nav .navbar-black {
+      display: none; }
+    .nav .navbar-white-left {
+      display: none; }
   .nav .b-nav-link,
   .nav .w-nav-link {
     text-decoration: none; }
 
 @media screen and (min-width: 768px) {
+  .burger-wrap {
+    display: none; }
+
   .nav {
+    display: block;
     background-color: white; }
     .nav .burger-menu {
       display: none; }
@@ -111,6 +112,63 @@ a {
               color: #ec5242; }
             .nav .navbar-white-right-wraper .w-nav-link:last-child {
               margin-right: 20px; } }
+.burger-wrap {
+  height: 100px;
+  position: relative;
+  z-index: 200; }
+
+.burger-menu {
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  width: 100%;
+  top: 0%;
+  left: 0;
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  margin-bottom: 300px; }
+  .burger-menu a {
+    color: #3e5353;
+    font-size: 35px; }
+
+.mobile-navbar-white-right-wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f1d1d;
+  position: fixed;
+  top: -100vh;
+  transition: top 0.4s; }
+  .mobile-navbar-white-right-wraper .nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none; }
+  .mobile-navbar-white-right-wraper .nav-list-link {
+    border: 1px solid green;
+    color: white;
+    font-size: 50px;
+    font-family: "Cocogoose Pro", sans-serif;
+    display: block;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    text-align: center;
+    transition: all .5s; }
+    .mobile-navbar-white-right-wraper .nav-list-link:hover {
+      color: #ec5242;
+      letter-spacing: 1px; }
+
+.checkbox:checked ~ .mobile-navbar-white-right-wraper {
+  top: 0; }
+
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none; } }
 .header {
   height: 80vh;
   background-color: #e2e2e2; }
