@@ -1,22 +1,22 @@
 .about-3rdSection {
-
   background-color: white;
+
   @include d-flex(space-around, center);
+
   flex-direction: column;
   padding: 20px 0;
-  
 
   &-heading {
     font-family: $font-cocogoose-100;
-    font-size: calc(.975rem + 0.5vw);
+    font-size: calc(0.975rem + 0.5vw);
     line-height: 1;
     letter-spacing: 0.5px;
 
     &::after {
-        @extend %tenPerCent-border-B;
-        width: 5%;
-        padding-top: 10px;
-        
+      @extend %tenPerCent-border-B;
+
+      width: 5%;
+      padding-top: 10px;
     }
   }
 
@@ -29,72 +29,71 @@
   }
 
   &-card {
+    @include d-flex();
 
-      @include d-flex();
+    > div {
+      width: 280px;
+      height: 140px;
+      background-size: cover;
+      background-position-y: bottom;
+      // card text flex
+      @include d-flex(center, center);
 
-      > div {
-        width: 280px;
-        height: 140px;
-        background-size: cover;
-        background-position-y: bottom;
-        // card text flex 
-        @include d-flex(center, center);
-        flex-direction: column;
-        // text prop.
-        text-align: center;
-        color: white;
-        font-family: $font-cocogoose-reg;
-        // other 
-        cursor: pointer;
-      }
-
-      &-1 {
-          margin-right: 20px;
-          background-image:
-          linear-gradient(
-            rgba($color-decoration, 0.5),
-            rgba($color-decoration, 0.5),
-          ),
-            url(../../imgs/card1-20_090-1545x1030.jpg);
+      flex-direction: column;
+      // text prop.
+      text-align: center;
+      color: white;
+      font-family: $font-cocogoose-reg;
+      // other
+      cursor: pointer;
     }
 
-      &-2 {
-    
-        background-image:
+    &-1 {
+      margin-right: 20px;
+      background-image:
         linear-gradient(
           rgba($color-decoration, 0.5),
           rgba($color-decoration, 0.5),
         ),
-         url(../../imgs/card2ByPalma-Conference-2018-624x351.jpg);
+        url(../../imgs/card1-20_090-1545x1030.jpg);
     }
 
-    //card text 
-    &-text-1 {
-        font-size: 30px;
-        letter-spacing: 2px;
+    &-2 {
+      background-image:
+        linear-gradient(
+          rgba($color-decoration, 0.5),
+          rgba($color-decoration, 0.5),
+        ),
+        url(../../imgs/card2ByPalma-Conference-2018-624x351.jpg);
     }
+
+    //card text
+    &-text-1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
     &-text-2 {
-        font-size: 10px;
-        letter-spacing: 1.1px;
+      font-size: 10px;
+      letter-spacing: 1.1px;
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-    .about-3rdSection-card {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        > div {
-            width: 320px;
-            height: 180px;
-        }
+  .about-3rdSection-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+    > div {
+      width: 320px;
+      height: 180px;
     }
+  }
 
-    .about-3rdSection-card-1 {
-        margin-bottom: 20px;
-        margin-right: 0;
-    }
+  .about-3rdSection-card-1 {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
 }

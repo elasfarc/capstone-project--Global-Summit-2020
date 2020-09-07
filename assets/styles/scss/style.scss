@@ -10,7 +10,7 @@
 @import 'layout/index/featured-speakers';
 @import 'layout/index/partner-main';
 @import 'layout/index/footer';
-// about 
+// about
 @import 'layout/about/_about-header';
 @import 'layout/about/about-2ndSection';
 @import 'layout/about/about-3rdSection';
@@ -18,14 +18,10 @@
 @import 'layout/tickets/booking_select-tickets';
 @import 'layout/tickets/booking_2ndsection';
 
-
-
-
-
-
 body {
   background-color: #f9f9f9;
 }
+
 .great-wraper {
   max-width: 1200px;
   margin: 0 auto;

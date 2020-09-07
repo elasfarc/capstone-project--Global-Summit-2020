@@ -1,25 +1,22 @@
 
 .main-program img {
-  //width: 100px;
-  width: 7.316vw;
+  width: 12.316vw;
+  padding: 10px;
 }
 
 .main-program {
   @include mainProgram-card-background($color-primary);
 
   color: white;
-  //@include d-flex(flex-start,center);
-  //flex-direction: column;
   text-align: center;
-  //@include: 50px 0;
   padding: 12.658vw 0;
 
   &-heading {
-    //margin-bottom: 60px;
     margin-bottom: 10.19vw;
 
     &::after {
       @extend %tenPerCent-border-B;
+
       border-bottom: 3px solid $color-decoration;
     }
   }
@@ -33,15 +30,14 @@
 
     .main-program-card {
       @include mainProgram-card-background();
-      //height: 150px;
+
       min-height: 20.408vw;
       width: 100%;
       padding: 0;
-      //margin-bottom: 15px;
       margin-bottom: 3.641vw;
 
       @include d-flex(space-around, center);
-      //padding: 0 10px;
+
       text-align: left;
       border-radius: 2px;
 
@@ -56,19 +52,18 @@
         padding: 2vw 0;
 
         p {
-          text-align: center;
-          width:95%;
+          width: 95%;
           margin: 0 auto;
+          font-size: 13px;
         }
       }
     }
 
     .card5 {
-      //margin-bottom: 50px;
       margin-bottom: 12.136vw;
     }
   }
- 
+
   &-btn {
     width: 60%;
     height: 60px;
@@ -94,15 +89,13 @@
 
 @media screen and (min-width: 768px) {
   .main-program img {
-    //width: 100px;
-    width: 4.316vw;
+    width: 60px;
   }
 
   .main-program {
     padding: 2.658vw 0;
 
     &-heading {
-      //margin-bottom: 60px;
       margin-bottom: 3.19vw;
       font-size: 80%;
 
@@ -119,7 +112,6 @@
     }
 
     .main-program-card {
-      max-height: 18.408vw;
       width: 100%;
       padding: 0;
       margin-right: 4px;
@@ -159,6 +151,7 @@
       font-size: 10px;
     }
   }
+
   .hideME {
     display: none;
   }

@@ -1,15 +1,16 @@
 .about-2ndSection {
   background-color: white;
+
   @include d-flex(space-around, center);
+
   flex-direction: column;
-  //height: 80vh;
   padding: 20px 0;
   text-align: center;
+
   @extend %border-top-bottom;
 
   &-heading {
     text-transform: capitalize;
-
     font-family: $font-cocogoose-100;
     font-size: calc(1.275rem + 0.5vw);
     line-height: 1;
@@ -21,6 +22,7 @@
 
     &::after {
       @extend %tenPerCent-border-B;
+
       width: 5%;
       padding-top: 20px;
     }
@@ -40,9 +42,10 @@
     margin-bottom: 20px;
     border: 1px solid $color-sec;
     width: 400px;
-    @include d-flex(flex-start, center);
-    flex-direction: column;
 
+    @include d-flex(flex-start, center);
+
+    flex-direction: column;
     position: relative;
 
     &-right {

@@ -1,11 +1,4 @@
 .header {
-  //height: 80vh;
-  //height: 150vw;
-  //position: relative;
-  // @include mainProgram-card-background(white);
-  //background-color: #fff;
-  //background-color: rgba(211, 211, 211, 0.205);
-
   &-top-img {
     height: 120px;
     width: 100%;
@@ -18,28 +11,16 @@
       url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
     background-size: cover;
     background-position: center;
-
-    // img {
-    // height: 120px;
-    // width: 100%;
-    // object-fit: cover;
-    // }
   }
 
   &-wrapper {
-    //margin-top: 20vw;
-    //@include border;
-    //max-width: 700px;
-    //position: absolute;
     top: 18%;
     left: 0;
-    //transform: translate(0,-8%);
-    //@include d-flex(flex-start);
+
     @include d-flex(flex-start);
 
     flex-direction: column;
     height: 100%;
-    //padding: 0 18px;
     padding: 04.369vw;
     padding-top: 10px;
     margin-left: 20px;
@@ -47,10 +28,10 @@
 
   &-main {
     margin-top: 30px;
+
     &-sub {
       color: $color-decoration;
       text-transform: capitalize;
-      //font-size: 3vh;
       font-weight: 300;
       margin-bottom: 1vw;
     }
@@ -59,37 +40,25 @@
       color: $color-decoration;
       text-transform: uppercase;
       font-family: $font-cocogoose-reg;
-      //font-size: 3.6vh;
       font-size: calc(1rem + 3vw);
-      //font-size: calc(.5rem + 5vw);
       line-height: 1;
 
       .newline {
         display: block;
       }
 
-
-
-
       color: transparent;
       background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1tbcv17CChdEB5c5eg2iOAHaFj%26pid%3DApi&f=1);
-      //background-size: cover;
       background-position-x: -100px;
       background-position-y: 400px;
       background-attachment: fixed;
-      //background-repeat: repeat;
       -webkit-background-clip: text;
-
     }
-
-
   }
 
   &-description {
     border: 3px solid black;
     background-color: #f7f7f7;
-    //width: 90.875vw;
-    //text-align: justify;
     font-size: 1.92vh;
     padding: 0.9vh;
     margin: 2.56vh 0;
@@ -101,11 +70,9 @@
       font-family: $font-cocogoose-reg;
       letter-spacing: 1px;
       font-size: 1.1rem;
-      //font-size: 1.4em;
     }
 
     &-location {
-      //font-size: 1.16vh;
       font-size: 0.9rem;
       font-weight: 300;
     }
@@ -114,8 +81,6 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    //height: 100vh;
-
     &-wrapper {
       height: 100%;
       justify-content: flex-start;
@@ -123,35 +88,29 @@
       padding-top: 5px;
       margin-left: 0;
     }
-    &-main {
 
+    &-main {
       margin-top: 60px;
-      
 
       &-sub {
         font-size: 2rem;
       }
 
       &-primary {
-        //font-size: 11vh;
-        //font-size: 6vw;
         font-size: 4rem;
-        
       }
-
     }
+
     &-description {
       max-width: 500px;
       font-size: 1rem;
     }
+
     &-spacetime {
       &-date {
-        
-
         font-size: 1.5rem;
-        
       }
-  
+
       &-location {
         font-size: 1rem;
       }

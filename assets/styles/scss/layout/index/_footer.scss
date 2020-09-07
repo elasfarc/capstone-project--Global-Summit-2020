@@ -12,7 +12,6 @@
       margin: 0 auto;
 
       img {
-        //width: 19.531vw;
         width: 100px;
       }
     }
@@ -34,39 +33,36 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
-    .footer {
-        //height: 8.531vw;
-        max-height: 100px;
-        min-height: 100px;
-        text-align: left;
+  .footer {
+    max-height: 100px;
+    min-height: 100px;
+    text-align: left;
 
-        &-left {
-          &-wraper {
-            img {
-
-              width: 150px;
-            }
-          }
+    &-left {
+      &-wraper {
+        img {
+          width: 150px;
         }
-        &-right {
-            width: 50%;
-            
-            &-wraper {
-              width: 90%;
-              margin: 0 auto;
-        
-              p {
-                font-size: 15px;
-              }
-            }
-          }
+      }
     }
+
+    &-right {
+      width: 50%;
+
+      &-wraper {
+        width: 90%;
+        margin: 0 auto;
+
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
 }
 
 .other-pages-footer {
   background-color: rgb(46, 46, 46);
   color: $color-sec;
 }
-

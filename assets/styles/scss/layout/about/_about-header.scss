@@ -1,139 +1,117 @@
 .about-header {
-    //height: 85vh;
+  position: relative;
+  margin-bottom: 20px;
+
+  &-wrap {
+    top: calc(35% + 0.5vw);
+    left: 45%;
+    margin-top: 70px;
+  }
+
+  &-top {
+    color: $color-decoration;
+    text-align: center;
+
+    &-1 {
+      display: none;
+      text-transform: capitalize;
+      font-size: calc(1.43rem + 0.5vw);
+      font-weight: 300;
+      margin-bottom: 0.3vw;
+    }
+
+    &-2 {
+      text-transform: uppercase;
+      font-family: $font-cocogoose-reg;
+      font-size: calc(1.875rem + 0.5vw);
+      line-height: 1;
+      letter-spacing: 0.5px;
+      padding-bottom: 40px;
+
+      &::after {
+        @extend %tenPerCent-border-B;
+
+        width: 5%;
+        padding-top: 20px;
+      }
+    }
+  }
+
+  &-middle {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    background-color: white;
+    border: 1px solid $color-sec;
+
+    &-content {
+      padding: 30px 30px 30px 30px;
+      text-align: justify;
+      font-size: 16px;
+    }
+  }
+
+  &-bottom {
+    text-align: center;
+    font-size: 16px;
+
+    &-2 {
+      margin-top: 0.5vw;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-header {
     position: relative;
-    margin-bottom: 20px;
-    //font-size: 24px;
+
     &-wrap {
-        
-        //position: absolute;
-        top: calc(35% + 0.5vw);
-        left: 45%;
-        //transform: translate(-50%, -40%);
-        margin-top: 70px;
+      margin-top: 50px;
     }
 
     &-top {
-        
-        color: $color-decoration;
-        text-align: center;
+      &-1 {
+        display: block;
+        margin-bottom: 1.2rem;
+        font-size: calc(1.13rem + 0.5vw);
+      }
 
-        &-1 {
-            display: none;
-            text-transform: capitalize;
-            
-            font-size: calc(1.43rem + 0.5vw);
-            font-weight: 300;
-            margin-bottom: 0.3vw;
+      &-2 {
+        font-size: calc(1.545rem + 0.5vw);
+        line-height: 1.2;
+
+        &::after {
+          display: none;
         }
-
-        &-2 {
-            text-transform: uppercase;
-            font-family: $font-cocogoose-reg;
-            font-size: calc(1.875rem + 0.5vw);
-            line-height: 1;
-            letter-spacing: 0.5px;
-            padding-bottom: 40px;
-
-            &::after {
-                @extend %tenPerCent-border-B;
-                width: 5%;
-                padding-top: 20px;
-            }
-        }
+      }
     }
 
     &-middle {
-        //height: 150px;
-        width: 80%;
-        max-width: 700px;
-        margin: 0 auto 40px;
-        background-color: white;
-        border: 1px solid $color-sec;
-        &-content {
-            padding: 30px 30px 30px 30px ;
-            text-align: justify;
-            font-size: 16px;
+      width: 90%;
+
+      &-content {
+        line-height: 1.6;
+
+        .mobile-hide {
+          display: none;
         }
+      }
     }
 
     &-bottom {
-        text-align: center;
-        font-size: 16px;
-        &-2 {
-            margin-top: .5vw;
-            font-weight: 700;
-        }
+      width: 80%;
+      margin: 0 auto;
+
+      &-2 {
+        margin-top: 0.9vw;
+        margin-bottom: 40px;
+      }
     }
-
+  }
 }
-
-
-@media screen and (max-width: 768px) {
-
-    .about-header {
-        //height: calc(85vh - 70px);
-        position: relative;
-        
-        &-wrap {
-            margin-top: 50px;
-        }
-    
-        &-top {
-
-            &-1 {
-                display: block;
-                margin-bottom: 1.2rem;
-                font-size: calc(1.13rem + 0.5vw);
-            }
-    
-            &-2 {
-                font-size: calc(1.545rem + 0.5vw);
-                line-height: 1.2;
-                //padding-bottom: 40px;
-    
-                &::after {
-                    display: none;
-                }
-            }
-        }
-    
-        &-middle {
-            //height: 150px;
-            width: 90%;
-
-            &-content {
-
-                line-height: 1.6;
-
-                .mobile-hide {
-                    display: none;
-                }
-            }
-        }
-    
-        &-bottom {
-            width: 80%;
-            margin: 0 auto;
-            
-            &-2 {
-                margin-top: .9vw;
-                margin-bottom: 40px;
-            }
-        }
-    
-    }
-
-
-}
-
-
-
-
-
-
-
 
 .great-wraper {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
