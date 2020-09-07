@@ -111,11 +111,13 @@
       
       &-card {
         max-height: 150px;
-        ///padding: 20px 0 50px 50px;
+        //padding: 20px 0 50px 50px;
+        margin: 5px 0 5px 5px;;
+
         //@include border;
 
         &-right {
-          margin-left: 5vw;
+          margin-left: 3vw;
           height: 100%;
           justify-content: flex-start;
 

@@ -1,9 +1,10 @@
 .header {
-  height: 80vh;
+  //height: 80vh;
   //height: 150vw;
   //position: relative;
   // @include mainProgram-card-background(white);
-  background-color: #e2e2e2;
+  //background-color: #fff;
+  //background-color: rgba(211, 211, 211, 0.205);
 
   &-top-img {
     height: 120px;
@@ -11,8 +12,8 @@
     background-image:
       linear-gradient(
         to left top,
-        rgba(#fff, 1),
-        rgba(0, 0, 0, 0.25)
+        rgba(#fff, 0.8),
+        rgba(225, 225, 225, 0.8)
       ),
       url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
     background-size: cover;
@@ -27,7 +28,7 @@
 
   &-wrapper {
     //margin-top: 20vw;
-    @include border;
+    //@include border;
     //max-width: 700px;
     //position: absolute;
     top: 18%;
@@ -41,9 +42,11 @@
     //padding: 0 18px;
     padding: 04.369vw;
     padding-top: 10px;
+    margin-left: 20px;
   }
 
   &-main {
+    margin-top: 30px;
     &-sub {
       color: $color-decoration;
       text-transform: capitalize;
@@ -64,7 +67,22 @@
       .newline {
         display: block;
       }
+
+
+
+
+      color: transparent;
+      background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1tbcv17CChdEB5c5eg2iOAHaFj%26pid%3DApi&f=1);
+      //background-size: cover;
+      background-position-x: -100px;
+      background-position-y: 400px;
+      background-attachment: fixed;
+      //background-repeat: repeat;
+      -webkit-background-clip: text;
+
     }
+
+
   }
 
   &-description {
@@ -96,18 +114,20 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    height: 100vh;
+    //height: 100vh;
 
     &-wrapper {
       height: 100%;
       justify-content: flex-start;
       padding-left: 100px;
       padding-top: 5px;
+      margin-left: 0;
     }
     &-main {
 
-      margin-top: 100px;
+      margin-top: 60px;
       
+
       &-sub {
         font-size: 2rem;
       }

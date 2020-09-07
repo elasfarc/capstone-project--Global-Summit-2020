@@ -168,26 +168,25 @@ a {
 @media screen and (min-width: 768px) {
   .burger-menu {
     display: none; } }
-.header {
-  height: 80vh;
-  background-color: #e2e2e2; }
-  .header-top-img {
-    height: 120px;
-    width: 100%;
-    background-image: linear-gradient(to left top, white, rgba(0, 0, 0, 0.25)), url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
-    background-size: cover;
-    background-position: center; }
-  .header-wrapper {
-    border: 1px solid green;
-    top: 18%;
-    left: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-direction: column;
-    height: 100%;
-    padding: 04.369vw;
-    padding-top: 10px; }
+.header-top-img {
+  height: 120px;
+  width: 100%;
+  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(225, 225, 225, 0.8)), url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
+  background-size: cover;
+  background-position: center; }
+.header-wrapper {
+  top: 18%;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  height: 100%;
+  padding: 04.369vw;
+  padding-top: 10px;
+  margin-left: 20px; }
+.header-main {
+  margin-top: 30px; }
   .header-main-sub {
     color: #ec5242;
     text-transform: capitalize;
@@ -198,45 +197,50 @@ a {
     text-transform: uppercase;
     font-family: "COCOGOOSE Regular", sans-serif;
     font-size: calc(1rem + 3vw);
-    line-height: 1; }
+    line-height: 1;
+    color: transparent;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1tbcv17CChdEB5c5eg2iOAHaFj%26pid%3DApi&f=1);
+    background-position-x: -100px;
+    background-position-y: 400px;
+    background-attachment: fixed;
+    -webkit-background-clip: text; }
     .header-main-primary .newline {
       display: block; }
-  .header-description {
-    border: 3px solid black;
-    background-color: #f7f7f7;
-    font-size: 1.92vh;
-    padding: 0.9vh;
-    margin: 2.56vh 0;
-    max-width: 350px; }
-  .header-spacetime-date {
-    font-family: "COCOGOOSE Regular", sans-serif;
-    letter-spacing: 1px;
-    font-size: 1.1rem; }
-  .header-spacetime-location {
-    font-size: 0.9rem;
-    font-weight: 300; }
+.header-description {
+  border: 3px solid black;
+  background-color: #f7f7f7;
+  font-size: 1.92vh;
+  padding: 0.9vh;
+  margin: 2.56vh 0;
+  max-width: 350px; }
+.header-spacetime-date {
+  font-family: "COCOGOOSE Regular", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.1rem; }
+.header-spacetime-location {
+  font-size: 0.9rem;
+  font-weight: 300; }
 
 @media screen and (min-width: 768px) {
-  .header {
-    height: 100vh; }
-    .header-wrapper {
-      height: 100%;
-      justify-content: flex-start;
-      padding-left: 100px;
-      padding-top: 5px; }
-    .header-main {
-      margin-top: 100px; }
-      .header-main-sub {
-        font-size: 2rem; }
-      .header-main-primary {
-        font-size: 4rem; }
-    .header-description {
-      max-width: 500px;
-      font-size: 1rem; }
-    .header-spacetime-date {
-      font-size: 1.5rem; }
-    .header-spacetime-location {
-      font-size: 1rem; } }
+  .header-wrapper {
+    height: 100%;
+    justify-content: flex-start;
+    padding-left: 100px;
+    padding-top: 5px;
+    margin-left: 0; }
+  .header-main {
+    margin-top: 60px; }
+    .header-main-sub {
+      font-size: 2rem; }
+    .header-main-primary {
+      font-size: 4rem; }
+  .header-description {
+    max-width: 500px;
+    font-size: 1rem; }
+  .header-spacetime-date {
+    font-size: 1.5rem; }
+  .header-spacetime-location {
+    font-size: 1rem; } }
 .main-program img {
   width: 7.316vw; }
 
@@ -413,9 +417,10 @@ a {
   .featuredSpeakers-speakers {
     grid-template-columns: 1fr 1fr; }
     .featuredSpeakers-speakers-card {
-      max-height: 150px; }
+      max-height: 150px;
+      margin: 5px 0 5px 5px; }
       .featuredSpeakers-speakers-card-right {
-        margin-left: 5vw;
+        margin-left: 3vw;
         height: 100%;
         justify-content: flex-start; }
         .featuredSpeakers-speakers-card-right .fs-card-right-top::after {
