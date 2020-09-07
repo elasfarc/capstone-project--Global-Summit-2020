@@ -10,7 +10,7 @@
   
   
 
-![screenshot](./project-SC.png)
+![screenshot](./cap-sc-1.png)
 
   
 
