@@ -20,6 +20,7 @@
 
     &::after {
       @extend %tenPerCent-border-B;
+      border-bottom: 3px solid $color-decoration;
     }
   }
 
@@ -53,6 +54,12 @@
       .card-description {
         //width: 50%; //atention here // // // // // / /
         padding: 2vw 0;
+
+        p {
+          text-align: center;
+          width:95%;
+          margin: 0 auto;
+        }
       }
     }
 

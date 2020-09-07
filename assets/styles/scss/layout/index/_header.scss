@@ -33,6 +33,7 @@
     top: 18%;
     left: 0;
     //transform: translate(0,-8%);
+    //@include d-flex(flex-start);
     @include d-flex(flex-start);
 
     flex-direction: column;
@@ -104,6 +105,8 @@
       padding-top: 5px;
     }
     &-main {
+
+      margin-top: 100px;
       
       &-sub {
         font-size: 2rem;
@@ -112,7 +115,7 @@
       &-primary {
         //font-size: 11vh;
         //font-size: 6vw;
-        font-size: 3rem;
+        font-size: 4rem;
         
       }
 

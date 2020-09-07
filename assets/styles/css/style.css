@@ -224,10 +224,12 @@ a {
       justify-content: flex-start;
       padding-left: 100px;
       padding-top: 5px; }
-    .header-main-sub {
-      font-size: 2rem; }
-    .header-main-primary {
-      font-size: 3rem; }
+    .header-main {
+      margin-top: 100px; }
+      .header-main-sub {
+        font-size: 2rem; }
+      .header-main-primary {
+        font-size: 4rem; }
     .header-description {
       max-width: 500px;
       font-size: 1rem; }
@@ -249,6 +251,8 @@ a {
   padding: 12.658vw 0; }
   .main-program-heading {
     margin-bottom: 10.19vw; }
+    .main-program-heading::after {
+      border-bottom: 3px solid #ec5242; }
   .main-program-cardWraper {
     display: flex;
     justify-content: flex-start;
@@ -277,6 +281,10 @@ a {
         font-size: 3vw; }
       .main-program-cardWraper .main-program-card .card-description {
         padding: 2vw 0; }
+        .main-program-cardWraper .main-program-card .card-description p {
+          text-align: center;
+          width: 95%;
+          margin: 0 auto; }
     .main-program-cardWraper .card5 {
       margin-bottom: 12.136vw; }
   .main-program-btn {
