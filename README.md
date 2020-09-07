@@ -28,7 +28,7 @@
 
 ## Demo Link:
 
-[You can find the project live here](https://raw.githack.com/Fanger53/apple-page/features/index.html)
+[You can find the project live here](https://raw.githack.com/elasfarc/capstone-project--Global-Summit-2020/feature-branch/index.html)
 
   
 
