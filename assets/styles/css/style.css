@@ -94,10 +94,12 @@ a {
         justify-content: space-between;
         align-items: center;
         font-size: 18px; }
-        .nav .navbar-white-left-wraper {
-          margin-left: 40px; }
-          .nav .navbar-white-left-wraper .nav-brand {
-            height: 40px; }
+        .nav .navbar-white-left {
+          display: block; }
+          .nav .navbar-white-left-wraper {
+            margin-left: 40px; }
+            .nav .navbar-white-left-wraper .nav-brand {
+              height: 40px; }
         .nav .navbar-white-right-wraper {
           display: inline-flex;
           font-family: "Cocogoose Pro", sans-serif; }
@@ -113,7 +115,6 @@ a {
             .nav .navbar-white-right-wraper .w-nav-link:last-child {
               margin-right: 20px; } }
 .burger-wrap {
-  height: 100px;
   position: relative;
   z-index: 200; }
 
@@ -137,18 +138,14 @@ a {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background-color: #1f1d1d;
+  background-color: #272a31;
   position: fixed;
   top: -100vh;
   transition: top 0.4s; }
   .mobile-navbar-white-right-wraper .nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     list-style: none; }
   .mobile-navbar-white-right-wraper .nav-list-link {
-    border: 1px solid green;
     color: white;
     font-size: 50px;
     font-family: "Cocogoose Pro", sans-serif;
@@ -161,7 +158,9 @@ a {
     transition: all .5s; }
     .mobile-navbar-white-right-wraper .nav-list-link:hover {
       color: #ec5242;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      border: 1px solid #ec5242;
+      padding: 3px; }
 
 .checkbox:checked ~ .mobile-navbar-white-right-wraper {
   top: 0; }

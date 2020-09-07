@@ -81,7 +81,8 @@
             font-size: 18px;
             
             &-left {
-               
+               //dispaly left logo (hided < MD)
+               display: block;
                 &-wraper {
                     margin-left: 40px;
                     .nav-brand {
@@ -134,7 +135,7 @@
 
 //burger wrap so it has its own height when burger-menu itself is fixed
 .burger-wrap {
-     height: 100px;
+     //height: 100px;
 
      position: relative;
      z-index: 200;
@@ -178,7 +179,7 @@
     @include d-flex(center, center);
     width: 100vw;
     height: 100vh;
-    background-color: #1f1d1d;
+    background-color: $color-primary;
     position: fixed;
     //right: -50vw;
     //display: flex;
@@ -190,7 +191,7 @@
 
     //ul 
     .nav-list {
-        @include d-flex(center, center);
+        //@include d-flex(center, center);
         flex-direction: column;
 
         list-style: none;
@@ -206,7 +207,7 @@
    //link<a>
     //&-mobile-w-nav-link {
     .nav-list-link {
-        @include border;
+       
                 color: white;
                 font-size: 50px;
                 font-family: $font-cocogoose-100;
@@ -223,6 +224,8 @@
                 color: $color-decoration;
                 //line-height: 3px;
                 letter-spacing: 1px;
+                border: 1px solid $color-decoration;
+                padding: 3px;
             }
     }
     
