@@ -10,7 +10,9 @@
   
   
 
-![screenshot](./cap-sc-1.png)
+![screenshot 1](./cap-sc-1.png)
+
+![screenshot 2](./cap-sc-2.png)
 
   
 
