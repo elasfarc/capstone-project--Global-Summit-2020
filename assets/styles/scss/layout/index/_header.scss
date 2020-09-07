@@ -2,13 +2,7 @@
   &-top-img {
     height: 120px;
     width: 100%;
-    background-image:
-      linear-gradient(
-        to left top,
-        rgba(#fff, 0.8),
-        rgba(225, 225, 225, 0.8)
-      ),
-      url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
+    background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(225, 225, 225, 0.8)), url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
     background-size: cover;
     background-position: center;
   }
@@ -37,7 +31,6 @@
     }
 
     &-primary {
-      color: $color-decoration;
       text-transform: uppercase;
       font-family: $font-cocogoose-reg;
       font-size: calc(1rem + 3vw);

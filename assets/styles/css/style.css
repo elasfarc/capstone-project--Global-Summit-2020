@@ -7,6 +7,7 @@
 body {
   font-size: calc(1.5vw + 0.6em);
   font-family: "Lato", sans-serif;
+  background-color: #f9f9f9;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
 .about-2ndSection-heading::after,
 .about-3rdSection-heading::after,
 .booking-select-tickets-heading::after {
-  content: "";
+  content: '';
   display: block;
   border-bottom: 4px solid #ec5242;
   width: 10%;
@@ -28,15 +29,13 @@ a {
   padding-top: 10px;
 }
 
-.about-2ndSection {
-  border-top: 0.5px solid #d3d3d3;
-  border-bottom: 0.5px solid #d3d3d3;
+.white-filter {
+  filter: invert(99%) sepia(61%) saturate(86%) hue-rotate(219deg) brightness(116%) contrast(100%);
 }
 
-.white-filter {
-  filter:
-    invert(99%) sepia(61%) saturate(86%) hue-rotate(219deg)
-    brightness(116%) contrast(100%);
+.top2 {
+  background-color: #3c3f46;
+  background-image: url(../../imgs/texture.svg);
 }
 
 .nav-wraper {
@@ -221,13 +220,7 @@ a {
 .header-top-img {
   height: 120px;
   width: 100%;
-  background-image:
-    linear-gradient(
-      to left top,
-      rgba(255, 255, 255, 0.8),
-      rgba(225, 225, 225, 0.8)
-    ),
-    url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
+  background-image: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(225, 225, 225, 0.8)), url(../../imgs/music-festivals-sexual-assaults-0328.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -382,6 +375,11 @@ a {
   padding: 2vw 0;
 }
 
+.footer-right-wraper p {
+  font-size: 1.302vw;
+  font-size: 10px;
+}
+
 .main-program-cardWraper .main-program-card .card-description p {
   width: 95%;
   margin: 0 auto;
@@ -519,7 +517,7 @@ a {
 }
 
 .featuredSpeakers-speakers-card-right .fs-card-right-top::after {
-  content: "";
+  content: '';
   display: block;
   width: 10%;
   padding-top: 1.2vw;
@@ -658,7 +656,7 @@ a {
   grid-gap: 3vw;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "p1 p2" "p3 p4" "p5 p6";
+  grid-template-areas: 'p1 p2' 'p3 p4' 'p5 p6';
 }
 
 .partner-bottom-item-img {
@@ -710,7 +708,7 @@ a {
   .partner-bottom {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "p1 p2 p3 p4 p5";
+    grid-template-areas: 'p1 p2 p3 p4 p5';
   }
 
   .partner-bottom-item-img {
@@ -739,8 +737,6 @@ a {
   margin: 0 auto;
 }
 
-
-
 .footer-right {
   width: 50%;
 }
@@ -749,11 +745,6 @@ a {
   width: 100%;
   margin: 0 auto;
   padding-right: 20px;
-}
-
-.footer-right-wraper p {
-  font-size: 1.302vw;
-  font-size: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -901,6 +892,8 @@ a {
 }
 
 .about-2ndSection {
+  border-top: 0.5px solid #d3d3d3;
+  border-bottom: 0.5px solid #d3d3d3;
   background-color: white;
   display: flex;
   justify-content: space-around;
@@ -1010,21 +1003,11 @@ a {
 
 .about-3rdSection-card-1 {
   margin-right: 20px;
-  background-image:
-    linear-gradient(
-      rgba(236, 82, 66, 0.5),
-      rgba(236, 82, 66, 0.5)
-    ),
-    url(../../imgs/card1-20_090-1545x1030.jpg);
+  background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(../../imgs/card1-20_090-1545x1030.jpg);
 }
 
 .about-3rdSection-card-2 {
-  background-image:
-    linear-gradient(
-      rgba(236, 82, 66, 0.5),
-      rgba(236, 82, 66, 0.5)
-    ),
-    url(../../imgs/card2ByPalma-Conference-2018-624x351.jpg);
+  background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(../../imgs/card2ByPalma-Conference-2018-624x351.jpg);
 }
 
 .about-3rdSection-card-text-1 {
@@ -1113,16 +1096,7 @@ a {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   border: 5px solid #ec5242;
-  border-image:
-    repeating-linear-gradient(
-      -45deg,
-      #272a31 10px,
-      #ec5242 20px,
-      #d3d3d3 30px,
-      #272a31 40px,
-      #ec5242 50px
-    )
-    10;
+  border-image: repeating-linear-gradient(-45deg, #272a31 10px, #ec5242 20px, #d3d3d3 30px, #272a31 40px, #ec5242 50px) 10;
   font-size: 12px;
 }
 
@@ -1236,13 +1210,4 @@ a {
     text-align: center;
     max-width: 70%;
   }
-}
-
-body {
-  background-color: #f9f9f9;
-}
-
-.great-wraper {
-  max-width: 1200px;
-  margin: 0 auto;
 }
