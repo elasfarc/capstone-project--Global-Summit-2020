@@ -49,3 +49,43 @@
   border-top: 0.5px solid $color-sec;
   border-bottom: 0.5px solid $color-sec;
 }
+
+
+
+// sharable 
+
+//g
+%w-100 {
+  width: 100%;
+}
+
+// display 
+%d-block {
+  display: block;
+}
+%d-none {
+  display: none;
+}
+
+//flex
+ %d-flex {
+   display: flex;
+ }
+ %flex-dir-col {
+   flex-direction: column;
+ }
+ %flex-dir-row {
+  flex-direction: row;
+}
+//flex-X-Y
+
+// flex X 
+ %justify-content-center {
+   justify-content: center;
+ }
+
+ // flex Y 
+ %align-items-center {
+  align-items: center;
+}
+
