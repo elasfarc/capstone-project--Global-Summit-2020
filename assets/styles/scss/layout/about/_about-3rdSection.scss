@@ -1,9 +1,11 @@
 .about-3rdSection {
   background-color: white;
 
-  @include d-flex(space-around, center);
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-spaceAround;
+  @extend  %flex-dir-col;
 
-  flex-direction: column;
   padding: 20px 0;
 
   &-heading {
@@ -29,17 +31,22 @@
   }
 
   &-card {
-    @include d-flex();
 
+    @extend %d-flex;
     > div {
       width: 280px;
       height: 140px;
       background-size: cover;
       background-position-y: bottom;
-      // card text flex
-      @include d-flex(center, center);
 
-      flex-direction: column;
+      // card text flex
+      @extend %d-flex;
+      @extend %align-items-center;
+      @extend %justify-content-center;
+      @extend  %flex-dir-col;
+
+
+
       // text prop.
       text-align: center;
       color: white;

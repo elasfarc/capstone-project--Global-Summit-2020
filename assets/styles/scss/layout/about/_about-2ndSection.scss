@@ -1,9 +1,12 @@
 .about-2ndSection {
   background-color: white;
 
-  @include d-flex(space-around, center);
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-spaceAround;
+ @extend  %flex-dir-col;
 
-  flex-direction: column;
+
   padding: 20px 0;
   text-align: center;
 
@@ -42,10 +45,11 @@
     margin-bottom: 20px;
     border: 1px solid $color-sec;
     width: 400px;
-
-    @include d-flex(flex-start, center);
-
-    flex-direction: column;
+    
+    @extend %d-flex;
+    @extend %align-items-center;
+    @extend  %flex-dir-col;
+ 
     position: relative;
 
     &-right {

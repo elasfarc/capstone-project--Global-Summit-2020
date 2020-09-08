@@ -22,6 +22,24 @@ a {
   border-top: 0.5px solid #d3d3d3;
   border-bottom: 0.5px solid #d3d3d3; }
 
+.about-header-top-1 {
+  display: none; }
+
+.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div {
+  display: flex; }
+
+.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div {
+  flex-direction: column; }
+
+.about-3rdSection-card > div {
+  justify-content: center; }
+
+.about-2ndSection, .about-3rdSection {
+  justify-content: space-around; }
+
+.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div {
+  align-items: center; }
+
 .white-filter {
   filter: invert(99%) sepia(61%) saturate(86%) hue-rotate(219deg) brightness(116%) contrast(100%); }
 
@@ -545,7 +563,6 @@ a {
     color: #ec5242;
     text-align: center; }
     .about-header-top-1 {
-      display: none;
       text-transform: capitalize;
       font-size: calc(1.43rem + 0.5vw);
       font-weight: 300;
@@ -609,10 +626,6 @@ a {
 
 .about-2ndSection {
   background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
   padding: 20px 0;
   text-align: center; }
   .about-2ndSection-heading {
@@ -636,10 +649,6 @@ a {
     margin-bottom: 20px;
     border: 1px solid #d3d3d3;
     width: 400px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
     position: relative; }
     .about-2ndSection-card-right-2 {
       font-size: 10px;
@@ -654,10 +663,6 @@ a {
 
 .about-3rdSection {
   background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
   padding: 20px 0; }
   .about-3rdSection-heading {
     font-family: "Cocogoose Pro", sans-serif;
@@ -673,34 +678,26 @@ a {
     line-height: 1.4;
     width: 80%;
     max-width: 500px; }
-  .about-3rdSection-card {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch; }
-    .about-3rdSection-card > div {
-      width: 280px;
-      height: 140px;
-      background-size: cover;
-      background-position-y: bottom;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      color: white;
-      font-family: "COCOGOOSE Regular", sans-serif;
-      cursor: pointer; }
-    .about-3rdSection-card-1 {
-      margin-right: 20px;
-      background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(../../imgs/card1-20_090-1545x1030.jpg); }
-    .about-3rdSection-card-2 {
-      background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(../../imgs/card2ByPalma-Conference-2018-624x351.jpg); }
-    .about-3rdSection-card-text-1 {
-      font-size: 30px;
-      letter-spacing: 2px; }
-    .about-3rdSection-card-text-2 {
-      font-size: 10px;
-      letter-spacing: 1.1px; }
+  .about-3rdSection-card > div {
+    width: 280px;
+    height: 140px;
+    background-size: cover;
+    background-position-y: bottom;
+    text-align: center;
+    color: white;
+    font-family: "COCOGOOSE Regular", sans-serif;
+    cursor: pointer; }
+  .about-3rdSection-card-1 {
+    margin-right: 20px;
+    background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(../../imgs/card1-20_090-1545x1030.jpg); }
+  .about-3rdSection-card-2 {
+    background-image: linear-gradient(rgba(236, 82, 66, 0.5), rgba(236, 82, 66, 0.5)), url(../../imgs/card2ByPalma-Conference-2018-624x351.jpg); }
+  .about-3rdSection-card-text-1 {
+    font-size: 30px;
+    letter-spacing: 2px; }
+  .about-3rdSection-card-text-2 {
+    font-size: 10px;
+    letter-spacing: 1.1px; }
 
 @media screen and (max-width: 768px) {
   .about-3rdSection-card {
