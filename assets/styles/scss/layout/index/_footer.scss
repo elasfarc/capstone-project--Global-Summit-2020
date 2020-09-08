@@ -2,7 +2,9 @@
   height: 19.531vw;
   text-align: center;
 
-  @include d-flex(space-around, center);
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-spaceAround;
 
   &-left {
     width: 50%;
@@ -21,7 +23,7 @@
     width: 50%;
 
     &-wraper {
-      width: 100%;
+      @extend %h-100;
       margin: 0 auto;
       padding-right: 20px;
 

@@ -21,8 +21,9 @@
     grid-template-rows: 1fr 1fr 1fr;
 
     &-card {
-      @include d-flex(flex-start, start);
 
+      @extend %d-flex;
+    
       padding: 15px 15px 0;
       height: 40.506vw;
 
@@ -30,9 +31,9 @@
         order: 2;
         margin-left: 10vw;
         height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        @extend %d-flex;
+        @extend  %flex-dir-col;
+        @extend %justify-content-spaceAround;
 
         .fs-card-right-top {
           &::after {

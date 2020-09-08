@@ -22,9 +22,9 @@
   }
 
   &-cardWraper {
-    @include d-flex();
+    @extend %d-flex;
 
-    flex-direction: column;
+    @extend  %flex-dir-col;
     width: 90%;
     margin: 0 auto;
 
@@ -36,7 +36,9 @@
       padding: 0;
       margin-bottom: 3.641vw;
 
-      @include d-flex(space-around, center);
+      @extend %d-flex;
+      @extend %align-items-center;
+      @extend %justify-content-spaceAround;
 
       text-align: left;
       border-radius: 2px;
@@ -83,7 +85,7 @@
   }
 
   &-footer {
-    display: none;
+    @extend %d-none;
   }
 }
 

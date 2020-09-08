@@ -22,22 +22,28 @@ a {
   border-top: 0.5px solid #d3d3d3;
   border-bottom: 0.5px solid #d3d3d3; }
 
-.about-header-top-1 {
+.header-wrapper, .footer-right-wraper {
+  height: 100%; }
+
+.header-main-primary .newline {
+  display: block; }
+
+.main-program-footer, .about-header-top-1 {
   display: none; }
 
-.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.header-wrapper, .main-program-cardWraper, .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card, .featuredSpeakers-speakers-card-right, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   display: flex; }
 
-.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets {
+.header-wrapper, .main-program-cardWraper, .featuredSpeakers-speakers-card-right, .partner, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets {
   flex-direction: column; }
 
-.about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.partner, .about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   justify-content: center; }
 
-.about-2ndSection, .about-3rdSection {
+.main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card-right, .footer, .about-2ndSection, .about-3rdSection {
   justify-content: space-around; }
 
-.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.main-program-cardWraper .main-program-card, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   align-items: center; }
 
 .white-filter {
@@ -178,11 +184,6 @@ a {
 .header-wrapper {
   top: 18%;
   left: 0;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-direction: column;
-  height: 100%;
   padding: 04.369vw;
   padding-top: 10px;
   margin-left: 20px; }
@@ -204,8 +205,6 @@ a {
     background-position-y: 400px;
     background-attachment: fixed;
     -webkit-background-clip: text; }
-    .header-main-primary .newline {
-      display: block; }
 .header-description {
   border: 3px solid black;
   background-color: #f7f7f7;
@@ -256,10 +255,6 @@ a {
     .main-program-heading::after {
       border-bottom: 3px solid #ec5242; }
   .main-program-cardWraper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-direction: column;
     width: 90%;
     margin: 0 auto; }
     .main-program-cardWraper .main-program-card {
@@ -269,9 +264,6 @@ a {
       width: 100%;
       padding: 0;
       margin-bottom: 3.641vw;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
       text-align: left;
       border-radius: 2px; }
       .main-program-cardWraper .main-program-card h4 {
@@ -301,8 +293,6 @@ a {
     .main-program-btn:hover {
       background-color: white;
       color: #ec5242; }
-  .main-program-footer {
-    display: none; }
 
 @media screen and (min-width: 768px) {
   .main-program img {
@@ -363,18 +353,12 @@ a {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr; }
     .featuredSpeakers-speakers-card {
-      display: flex;
-      justify-content: flex-start;
-      align-items: start;
       padding: 15px 15px 0;
       height: 40.506vw; }
       .featuredSpeakers-speakers-card-right {
         order: 2;
         margin-left: 10vw;
-        height: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around; }
+        height: 80%; }
         .featuredSpeakers-speakers-card-right .fs-card-right-top::after {
           content: '';
           display: block;
@@ -451,11 +435,7 @@ a {
       display: none; } }
 .partner {
   height: 200px;
-  background-color: #272a31;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
+  background-color: #272a31; }
   .partner-top {
     color: #d3d3d3;
     margin: 4vw 0 4vw; }
@@ -513,10 +493,7 @@ a {
     display: none; } }
 .footer {
   height: 19.531vw;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
+  text-align: center; }
   .footer-left {
     width: 50%; }
     .footer-left-wraper {
@@ -527,7 +504,6 @@ a {
   .footer-right {
     width: 50%; }
     .footer-right-wraper {
-      width: 100%;
       margin: 0 auto;
       padding-right: 20px; }
       .footer-right-wraper p {

@@ -3,9 +3,10 @@
   height: 200px;
   background-color: $color-primary;
 
-  @include d-flex(center, center);
-
-  flex-direction: column;
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-center;
+ @extend  %flex-dir-col;
 
   &-top {
     color: $color-sec;

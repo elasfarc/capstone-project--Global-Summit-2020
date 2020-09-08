@@ -11,10 +11,11 @@
     top: 18%;
     left: 0;
 
-    @include d-flex(flex-start);
-
-    flex-direction: column;
-    height: 100%;
+    
+    @extend %d-flex;
+    @extend  %flex-dir-col;
+  
+    @extend %h-100;
     padding: 04.369vw;
     padding-top: 10px;
     margin-left: 20px;
@@ -37,7 +38,7 @@
       line-height: 1;
 
       .newline {
-        display: block;
+        @extend %d-block;
       }
 
       color: transparent;
