@@ -1,7 +1,10 @@
 .booking-select-tickets {
-  @include d-flex(center, center);
 
-  flex-direction: column;
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-center;
+  @extend  %flex-dir-col;
+
   margin: 40px 0;
 
   &-heading {
@@ -20,7 +23,10 @@
   }
 
   &-descriptionBox {
-    @include d-flex(flex-start, center);
+    
+    @extend %d-flex;
+    @extend %align-items-center;
+
 
     font-size: 8px;
 

@@ -25,19 +25,19 @@ a {
 .about-header-top-1 {
   display: none; }
 
-.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div {
+.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   display: flex; }
 
-.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div {
+.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets {
   flex-direction: column; }
 
-.about-3rdSection-card > div {
+.about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   justify-content: center; }
 
 .about-2ndSection, .about-3rdSection {
   justify-content: space-around; }
 
-.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div {
+.about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   align-items: center; }
 
 .white-filter {
@@ -712,10 +712,6 @@ a {
     margin-bottom: 20px;
     margin-right: 0; } }
 .booking-select-tickets {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   margin: 40px 0; }
   .booking-select-tickets-heading {
     font-family: "Cocogoose Pro", sans-serif;
@@ -727,9 +723,6 @@ a {
       width: 20%;
       padding-top: 10px; }
   .booking-select-tickets-descriptionBox {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     font-size: 8px;
     border: 0.5px solid #d3d3d3;
     border-radius: 10px;
@@ -807,14 +800,8 @@ a {
     font-size: 12px; }
   .booking-section2-selectLunchBox-top {
     background-color: #f6f6f6;
-    min-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
+    min-height: 40px; }
   .booking-section2-selectLunchBox-bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 80px; }
     .booking-section2-selectLunchBox-bottom-option {
       padding: 0.6vw 1vw; }

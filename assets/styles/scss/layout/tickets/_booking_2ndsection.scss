@@ -28,11 +28,15 @@
     background-color: rgb(246, 246, 246);
     min-height: 40px;
 
-    @include d-flex(center, center);
+    @extend %d-flex;
+    @extend %align-items-center;
+    @extend %justify-content-center;
   }
 
   &-bottom {
-    @include d-flex(center, center);
+    @extend %d-flex;
+    @extend %align-items-center;
+    @extend %justify-content-center;
 
     min-height: 80px;
 
