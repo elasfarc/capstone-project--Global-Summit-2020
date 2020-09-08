@@ -28,22 +28,25 @@ a {
 .header-main-primary .newline {
   display: block; }
 
-.main-program-footer, .about-header-top-1 {
+.main-program-footer, #fs-card3,
+#fs-card4,
+#fs-card5,
+#fs-card6, .fs-menu .less, .fs-checkbox:checked ~ .fs-menu > div.more, .about-header-top-1 {
   display: none; }
 
-.header-wrapper, .main-program-cardWraper, .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card, .featuredSpeakers-speakers-card-right, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.header-wrapper, .main-program-cardWraper, .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card, .featuredSpeakers-speakers-card-right, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   display: flex; }
 
 .header-wrapper, .main-program-cardWraper, .featuredSpeakers-speakers-card-right, .partner, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets {
   flex-direction: column; }
 
-.partner, .about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   justify-content: center; }
 
 .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card-right, .footer, .about-2ndSection, .about-3rdSection {
   justify-content: space-around; }
 
-.main-program-cardWraper .main-program-card, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.main-program-cardWraper .main-program-card, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   align-items: center; }
 
 .white-filter {
@@ -341,17 +344,17 @@ a {
   .hideME {
     display: none; } }
 .featuredSpeakers {
-  color: white; }
+  color: white;
+  background-color: white; }
   .featuredSpeakers img {
     width: 300px; }
   .featuredSpeakers-heading {
     text-align: center;
     margin: 30px 0; }
   .featuredSpeakers-speakers {
-    background-color: white;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr; }
+    grid-template-rows: 1fr 1fr; }
     .featuredSpeakers-speakers-card {
       padding: 15px 15px 0;
       height: 40.506vw; }
@@ -433,6 +436,30 @@ a {
       display: block; }
     .featuredSpeakers-speakers-card-left .checker img:nth-child(2) {
       display: none; } }
+@media screen and (min-width: 768px) {
+  .fs-menu {
+    display: none; }
+
+  #fs-card5, #fs-card6 {
+    display: flex; } }
+.fs-menu-style {
+  padding: 10px;
+  margin: 0 30px 30px;
+  border: 0.5px solid #d3d3d3; }
+  .fs-menu-style-icon {
+    font-size: 10px;
+    color: #ec5242;
+    margin-left: 5px; }
+.fs-menu .more,
+.fs-menu .less {
+  color: #272a31;
+  font-family: "Cocogoose Pro", sans-serif;
+  font-weight: bold;
+  font-size: 12px; }
+
+.fs-checkbox:checked ~ .featuredSpeakers-speakers > :not(:nth-last-child(n + 5)) {
+  display: flex !important; }
+
 .partner {
   height: 200px;
   background-color: #272a31; }

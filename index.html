@@ -22,70 +22,41 @@
     <title>HOME</title>
   </head>
   <body>
-
-
-
-
-
     <div class="great-wraper">
-
-          <!--burger (right after great wraper)-->
+      <!--burger (right after great wraper)-->
       <!-- burger wraper -->
       <div class="burger-wrap">
-          
         <!--check-->
-        <input type="checkbox" id="check" class="checkbox"  />
+        <input type="checkbox" id="check" class="checkbox" />
 
-
-          <!--burger icon-->
-          <div class="burger-menu">
-                    <!--label-->
-        <label for="check" class="menu">
+        <!--burger icon-->
+        <div class="burger-menu">
+          <!--label-->
+          <label for="check" class="menu">
             <i class="fas fa-bars"></i>
-        </label>
-
-
-            
-          </div>
-
-          
-       
-
-        <!-- mobile nave   (navbar-navigation) --> 
-        <div class="mobile-navbar-white-right-wraper">
-
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a class="nav-list-link" href="./index.html"
-                    >
-                    Home
-                        </a
-                  >
-                </li>
-        
-                <li class="nav-list-item">
-                    <a class="nav-list-link" href="./about.html"
-                    >
-                    About
-                        </a
-                  >
-                </li>
-                <li class="nav-list-item current">
-                    <a class="nav-list-link " href="./booking.html"
-                    >
-                    BOOK!
-                        </a
-                  >
-                </li>
-            </ul>
+          </label>
         </div>
 
+        <!-- mobile nave   (navbar-navigation) -->
+        <div class="mobile-navbar-white-right-wraper">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html"> Home </a>
+            </li>
+
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./about.html"> About </a>
+            </li>
+            <li class="nav-list-item current">
+              <a class="nav-list-link" href="./booking.html"> BOOK! </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <!-- burger wraper end-->
-       <!--burger end-->
+      <!--burger end-->
 
       <nav class="nav">
-      
         <div class="navbar">
           <div class="navbar-black">
             <a class="b-nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -94,33 +65,41 @@
             <a class="b-nav-link" href="#">My Page</a>
             <a class="b-nav-link" href="#">Logout</a>
           </div>
-        <div class="navbar-white">
-          <div class="navbar-white-left">
-            <div class="navbar-white-left-wraper">
-              <img class="nav-brand" src="./assets/imgs/Discord-Logo+Wordmark-Black.svg" alt="">
+          <div class="navbar-white">
+            <div class="navbar-white-left">
+              <div class="navbar-white-left-wraper">
+                <img
+                  class="nav-brand"
+                  src="./assets/imgs/Discord-Logo+Wordmark-Black.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="navbar-white-right">
+              <div class="navbar-white-right-wraper">
+                <a class="here w-nav-link" href="#"
+                  ><p class="nav-item">Home</p></a
+                >
+                <a class="w-nav-link" href="./about.html"
+                  ><p class="nav-item">About</p></a
+                >
+                <a class="w-nav-link" href="./booking.html"
+                  ><p class="nav-item">Book!</p></a
+                >
+              </div>
             </div>
           </div>
-          <div class="navbar-white-right">
-            <div class="navbar-white-right-wraper">
-              <a class="here w-nav-link" href="#"><p class="nav-item">Home</p></a>
-              <a class="w-nav-link" href="./about.html"><p class="nav-item">About</p></a>
-              <a class="w-nav-link" href="./booking.html"><p class="nav-item">Book!</p></a>
-            </div>
-          </div>
-        </div>
         </div>
         <div class="burger-menu">
           <a href="#"><i class="fas fa-bars"></i></a>
         </div>
       </nav>
 
-
-      <header class="header ">
+      <header class="header">
         <div class="header-top-img">
           <!-- <img src="./assets/imgs/music-festivals-sexual-assaults-0328.jpg" alt=""> -->
         </div>
         <div class="header-wrapper">
-  
           <div class="header-main">
             <p class="header-main-sub">"Hello! Sharing world"</p>
             <h1 class="header-main-primary">
@@ -131,7 +110,11 @@
           </div>
           <div class="header-description">
             <p>
-              SCIENCENET cordially organizes the International Conference on Intelligence and Safety for Robotics slated on 20th-21st September 2020 at Taipei City,Taiwan . We welcome all scientists, scholars, students, industrialists to attend and explore their knowledge in the field of Intelligence and Safety for Robotics.
+              SCIENCENET cordially organizes the International Conference on
+              Intelligence and Safety for Robotics slated on 20th-21st September
+              2020 at Taipei City,Taiwan . We welcome all scientists, scholars,
+              students, industrialists to attend and explore their knowledge in
+              the field of Intelligence and Safety for Robotics.
             </p>
           </div>
           <div class="header-spacetime">
@@ -142,7 +125,7 @@
           </div>
         </div>
       </header>
-  
+
       <section class="main-program">
         <h2 class="main-program-heading">Main Program</h2>
         <div class="main-program-cardWraper">
@@ -230,12 +213,18 @@
         <button type="button" class="main-program-btn hideME">
           Join CC Global Summit 2015
         </button>
-        <a href="#" class="main-program-footer"><p class="main-program-footer-text">see the whole program</p></a>
+        <a href="#" class="main-program-footer"
+          ><p class="main-program-footer-text">see the whole program</p></a
+        >
       </section>
-  
+
       <!--featured-speakers-->
       <section class="featuredSpeakers-sec">
         <h2 class="featuredSpeakers-heading">Featured Speakers</h2>
+
+        <!--check (hided always)-->
+        <input type="checkbox" id="fs-check" class="fs-checkbox" hidden />
+
         <div class="featuredSpeakers-speakers">
           <div class="featuredSpeakers-speakers-card fs-card1">
             <div class="featuredSpeakers-speakers-card-right">
@@ -245,10 +234,10 @@
                   Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentium
                 </p>
               </div>
-    
+
               <p class="name-about-bottom">
-                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem ipsum
-                dolor sit ait. Tlutis at laboriosam aesentium
+                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem
+                ipsum dolor sit ait. Tlutis at laboriosam aesentium
               </p>
             </div>
             <div class="featuredSpeakers-speakers-card-left">
@@ -272,10 +261,10 @@
                   Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentium
                 </p>
               </div>
-    
+
               <p class="name-about-bottom">
-                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem ipsum
-                dolor sit ait. Tlutis at laboriosam aesentium
+                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem
+                ipsum dolor sit ait. Tlutis at laboriosam aesentium
               </p>
             </div>
             <div class="featuredSpeakers-speakers-card-left">
@@ -291,7 +280,7 @@
               </div>
             </div>
           </div>
-          <div class="featuredSpeakers-speakers-card fs-card1">
+          <div id="fs-card3" class="featuredSpeakers-speakers-card">
             <div class="featuredSpeakers-speakers-card-right">
               <div class="fs-card-right-top">
                 <h5 class="fs-card-right-top-1">Howlan Carvalho</h5>
@@ -299,10 +288,10 @@
                   Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentium
                 </p>
               </div>
-    
+
               <p class="name-about-bottom">
-                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem ipsum
-                dolor sit ait. Tlutis at laboriosam aesentium
+                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem
+                ipsum dolor sit ait. Tlutis at laboriosam aesentium
               </p>
             </div>
             <div class="featuredSpeakers-speakers-card-left">
@@ -318,7 +307,7 @@
               </div>
             </div>
           </div>
-          <div class="featuredSpeakers-speakers-card fs-card1">
+          <div id="fs-card4" class="featuredSpeakers-speakers-card">
             <div class="featuredSpeakers-speakers-card-right">
               <div class="fs-card-right-top">
                 <h5 class="fs-card-right-top-1">Fulvio Kerr</h5>
@@ -326,10 +315,10 @@
                   Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentium
                 </p>
               </div>
-    
+
               <p class="name-about-bottom">
-                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem ipsum
-                dolor sit ait. Tlutis at laboriosam aesentium
+                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem
+                ipsum dolor sit ait. Tlutis at laboriosam aesentium
               </p>
             </div>
             <div class="featuredSpeakers-speakers-card-left">
@@ -345,7 +334,8 @@
               </div>
             </div>
           </div>
-          <div class="featuredSpeakers-speakers-card fs-card1">
+
+          <div id="fs-card5" class="featuredSpeakers-speakers-card">
             <div class="featuredSpeakers-speakers-card-right">
               <div class="fs-card-right-top">
                 <h5 class="fs-card-right-top-1">Ricci Marcotte</h5>
@@ -353,10 +343,10 @@
                   Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentium
                 </p>
               </div>
-    
+
               <p class="name-about-bottom">
-                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem ipsum
-                dolor sit ait. Tlutis at laboriosam aesentium
+                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem
+                ipsum dolor sit ait. Tlutis at laboriosam aesentium
               </p>
             </div>
             <div class="featuredSpeakers-speakers-card-left">
@@ -372,7 +362,7 @@
               </div>
             </div>
           </div>
-          <div class="featuredSpeakers-speakers-card fs-card1">
+          <div id="fs-card6" class="featuredSpeakers-speakers-card">
             <div class="featuredSpeakers-speakers-card-right">
               <div class="fs-card-right-top">
                 <h5 class="fs-card-right-top-1">Millton Mosley</h5>
@@ -380,10 +370,10 @@
                   Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentium
                 </p>
               </div>
-    
+
               <p class="name-about-bottom">
-                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem ipsum
-                dolor sit ait. Tlutis at laboriosam aesentium
+                Lorem ipsum dolor sit ait. Tlutis at laboriosam aesentiumLorem
+                ipsum dolor sit ait. Tlutis at laboriosam aesentium
               </p>
             </div>
             <div class="featuredSpeakers-speakers-card-left">
@@ -400,9 +390,26 @@
             </div>
           </div>
         </div>
+
+        <!--show-more -> show/hide  last two feature-speaker cards [mobile] -->
+        <label for="fs-check" class="fs-menu">
+
+            <!--show more -->
+            <div class="more fs-menu-style">
+              <p class="fs-menu-style-p">MORE</p>
+              <i class="fs-menu-style-icon fas fa-chevron-down"></i>
+            </div>
+            <!--show less-->
+            <div class="less fs-menu-style">
+              <p class="fs-menu-style-p">LESS</p>
+              <i class="fs-menu-style-icon fas fa-chevron-up"></i>
+            </div>
+ 
+        </label>
+
       </section>
       <!--end featured-speakers-->
-  
+
       <!--Partner-->
       <section class="partner">
         <div class="partner-top">
@@ -410,49 +417,79 @@
         </div>
         <ul class="partner-bottom">
           <li class="partner-bottom-item pbi-1">
-            <a href="#"><img src="./assets/imgs/Mozilla.small.svg.png" class="partner-bottom-item-img" alt=""></a>
+            <a href="#"
+              ><img
+                src="./assets/imgs/Mozilla.small.svg.png"
+                class="partner-bottom-item-img"
+                alt=""
+            /></a>
           </li>
           <li class="partner-bottom-item pbi-2">
-            <a href=""><img src="./assets/imgs/Google_2015_logo_colorless_mourning_period.svg" class="partner-bottom-item-img" alt=""></a>
+            <a href=""
+              ><img
+                src="./assets/imgs/Google_2015_logo_colorless_mourning_period.svg"
+                class="partner-bottom-item-img"
+                alt=""
+            /></a>
           </li>
           <li class="partner-bottom-item pbi-3">
-            <a href=""><img src="./assets/imgs/Mozilla.small.svg.png" class="partner-bottom-item-img" alt=""></a>
+            <a href=""
+              ><img
+                src="./assets/imgs/Mozilla.small.svg.png"
+                class="partner-bottom-item-img"
+                alt=""
+            /></a>
           </li>
           <li class="partner-bottom-item pbi-4">
-            <a href=""><img src="./assets/imgs/Google_2015_logo_colorless_mourning_period.svg" class="partner-bottom-item-img" alt=""></a>
+            <a href=""
+              ><img
+                src="./assets/imgs/Google_2015_logo_colorless_mourning_period.svg"
+                class="partner-bottom-item-img"
+                alt=""
+            /></a>
           </li>
           <li class="partner-bottom-item pbi-5">
-            <a href=""><img src="./assets/imgs/Mozilla.small.svg.png" class="partner-bottom-item-img" alt=""></a>
+            <a href=""
+              ><img
+                src="./assets/imgs/Mozilla.small.svg.png"
+                class="partner-bottom-item-img"
+                alt=""
+            /></a>
           </li>
           <li class="partner-bottom-item pbi-6">
-            <a href=""><img src="./assets/imgs/Google_2015_logo_colorless_mourning_period.svg" class="partner-bottom-item-img" alt=""></a>
+            <a href=""
+              ><img
+                src="./assets/imgs/Google_2015_logo_colorless_mourning_period.svg"
+                class="partner-bottom-item-img"
+                alt=""
+            /></a>
           </li>
         </ul>
       </section>
       <!--End Partner-->
-  
+
       <!--footer-->
       <footer class="footer">
         <div class="footer-left">
           <div class="footer-left-wraper">
-            <img class="footerLogo" src="./assets/imgs/Discord-Logo+Wordmark-Black.svg" alt="">
+            <img
+              class="footerLogo"
+              src="./assets/imgs/Discord-Logo+Wordmark-Black.svg"
+              alt=""
+            />
           </div>
         </div>
         <div class="footer-right">
           <div class="footer-right-wraper">
-            <p class="footerText">2020 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut officia.</p>
+            <p class="footerText">
+              2020 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur ut officia.
+            </p>
             <p>Some Right Reserved</p>
           </div>
         </div>
       </footer>
       <!--end of footer-->
     </div>
-
-
-
   </body>
 </html>
-
-
-
-
