@@ -60,8 +60,7 @@
 
   &-table {
     max-width: 80%;
-    //overflow-x: scroll;
-
+    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     border: 5px solid $color-decoration;

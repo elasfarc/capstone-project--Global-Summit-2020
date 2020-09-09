@@ -175,7 +175,10 @@
   .fs-menu {
     display: none;
   }
-  #fs-card5, #fs-card6 {
+  #fs-card3,
+  #fs-card4,
+  #fs-card5,
+  #fs-card6 {
     display: flex;    //[ cant use @extend here :(   ]
   }
 }
@@ -237,10 +240,10 @@
 .fs-checkbox:checked ~ .featuredSpeakers-speakers > :not(:nth-last-child(n + 5)) {
     display: flex !important;
 }
-.fs-checkbox:checked ~ .fs-menu > div.more{
+.fs-checkbox:checked ~ .fs-menu > span.more{
   @extend %d-none;
 }
-.fs-checkbox:checked ~ .fs-menu > div.less{
+.fs-checkbox:checked ~ .fs-menu > span.less{
   @extend %d-flex;
   @extend %align-items-center;
   @extend %justify-content-center;

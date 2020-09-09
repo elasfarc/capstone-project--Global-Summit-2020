@@ -34,22 +34,22 @@ a {
 .nav, .nav .navbar-black, .nav .navbar-white-left, .main-program-footer, #fs-card3,
 #fs-card4,
 #fs-card5,
-#fs-card6, .fs-menu .less, .fs-checkbox:checked ~ .fs-menu > div.more, .about-header-top-1 {
+#fs-card6, .fs-menu .less, .fs-checkbox:checked ~ .fs-menu > span.more, .about-header-top-1 {
   display: none; }
 
-.mobile-navbar-white-right-wraper, .header-wrapper, .main-program-cardWraper, .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card, .featuredSpeakers-speakers-card-right, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.mobile-navbar-white-right-wraper, .header-wrapper, .main-program-cardWraper, .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card, .featuredSpeakers-speakers-card-right, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > span.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   display: flex; }
 
 .mobile-navbar-white-right-wraper .nav-list, .header-wrapper, .main-program-cardWraper, .featuredSpeakers-speakers-card-right, .partner, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets {
   flex-direction: column; }
 
-.mobile-navbar-white-right-wraper, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.mobile-navbar-white-right-wraper, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > span.less, .partner, .about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   justify-content: center; }
 
 .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card-right, .footer, .about-2ndSection, .about-3rdSection {
   justify-content: space-around; }
 
-.mobile-navbar-white-right-wraper, .main-program-cardWraper .main-program-card, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.mobile-navbar-white-right-wraper, .main-program-cardWraper .main-program-card, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > span.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   align-items: center; }
 
 .white-filter {
@@ -429,7 +429,10 @@ a {
   .fs-menu {
     display: none; }
 
-  #fs-card5, #fs-card6 {
+  #fs-card3,
+  #fs-card4,
+  #fs-card5,
+  #fs-card6 {
     display: flex; } }
 .fs-menu-style {
   padding: 10px;
