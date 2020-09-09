@@ -5,21 +5,21 @@
 .nav {
 
   //hide desktop nav by default
-  display: none;
+  @extend %d-none;
   background-color: yellowgreen;
   top: 0;
   left: 0;
-  width: 100%;
+  @extend %w-100;
 
   .navbar {
-    display: block;
+    @extend %d-block;
 
     &-black {
-      display: none;
+      @extend %d-none;
     }
 
     &-white {
-      &-left { display: none; }
+      &-left { @extend %d-none; }
     }
   }
 
@@ -54,6 +54,7 @@
         font-size: 12px;
 
         @include d-flex(flex-end, center);
+        
 
         .b-nav-link {
           padding: 0 10px;
@@ -128,7 +129,7 @@
   position: fixed;
   z-index: 1000;
   background-color: white;
-  width: 100%;
+  @extend %w-100;
   top: 0%;
   left: 0;
 
@@ -146,7 +147,9 @@
 //mobile nav styling third child
 
 .mobile-navbar-white-right-wraper {
-  @include d-flex(center, center);
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-center;
 
   width: 100vw;
   height: 100vh;
@@ -157,7 +160,7 @@
 
   //ul
   .nav-list {
-    flex-direction: column;
+    @extend  %flex-dir-col;
     list-style: none;
   }
 
@@ -167,7 +170,7 @@
     color: white;
     font-size: 50px;
     font-family: $font-cocogoose-100;
-    display: block;
+    @extend %d-block;
     text-decoration: none;
     margin: 20px;
     text-align: center;

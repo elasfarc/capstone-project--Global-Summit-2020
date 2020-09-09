@@ -22,31 +22,34 @@ a {
   border-top: 0.5px solid #d3d3d3;
   border-bottom: 0.5px solid #d3d3d3; }
 
+.nav, .burger-menu {
+  width: 100%; }
+
 .header-wrapper, .footer-right-wraper {
   height: 100%; }
 
-.header-main-primary .newline {
+.nav .navbar, .mobile-navbar-white-right-wraper .nav-list-link, .header-main-primary .newline {
   display: block; }
 
-.main-program-footer, #fs-card3,
+.nav, .nav .navbar-black, .nav .navbar-white-left, .main-program-footer, #fs-card3,
 #fs-card4,
 #fs-card5,
 #fs-card6, .fs-menu .less, .fs-checkbox:checked ~ .fs-menu > div.more, .about-header-top-1 {
   display: none; }
 
-.header-wrapper, .main-program-cardWraper, .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card, .featuredSpeakers-speakers-card-right, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.mobile-navbar-white-right-wraper, .header-wrapper, .main-program-cardWraper, .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card, .featuredSpeakers-speakers-card-right, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   display: flex; }
 
-.header-wrapper, .main-program-cardWraper, .featuredSpeakers-speakers-card-right, .partner, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets {
+.mobile-navbar-white-right-wraper .nav-list, .header-wrapper, .main-program-cardWraper, .featuredSpeakers-speakers-card-right, .partner, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets {
   flex-direction: column; }
 
-.fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.mobile-navbar-white-right-wraper, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .about-3rdSection-card > div, .booking-select-tickets, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   justify-content: center; }
 
 .main-program-cardWraper .main-program-card, .featuredSpeakers-speakers-card-right, .footer, .about-2ndSection, .about-3rdSection {
   justify-content: space-around; }
 
-.main-program-cardWraper .main-program-card, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
+.mobile-navbar-white-right-wraper, .main-program-cardWraper .main-program-card, .fs-menu .more, .fs-checkbox:checked ~ .fs-menu > div.less, .partner, .footer, .about-2ndSection, .about-2ndSection-card, .about-3rdSection, .about-3rdSection-card > div, .booking-select-tickets, .booking-select-tickets-descriptionBox, .booking-section2-selectLunchBox-top, .booking-section2-selectLunchBox-bottom {
   align-items: center; }
 
 .white-filter {
@@ -60,17 +63,9 @@ a {
   height: 50px; }
 
 .nav {
-  display: none;
   background-color: yellowgreen;
   top: 0;
-  left: 0;
-  width: 100%; }
-  .nav .navbar {
-    display: block; }
-    .nav .navbar-black {
-      display: none; }
-    .nav .navbar-white-left {
-      display: none; }
+  left: 0; }
   .nav .b-nav-link,
   .nav .w-nav-link {
     text-decoration: none; }
@@ -134,7 +129,6 @@ a {
   position: fixed;
   z-index: 1000;
   background-color: white;
-  width: 100%;
   top: 0%;
   left: 0;
   border: 1px solid #d3d3d3;
@@ -145,9 +139,6 @@ a {
     font-size: 35px; }
 
 .mobile-navbar-white-right-wraper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
   background-color: #272a31;
@@ -155,13 +146,11 @@ a {
   top: -100vh;
   transition: top 0.4s; }
   .mobile-navbar-white-right-wraper .nav-list {
-    flex-direction: column;
     list-style: none; }
   .mobile-navbar-white-right-wraper .nav-list-link {
     color: white;
     font-size: 50px;
     font-family: "Cocogoose Pro", sans-serif;
-    display: block;
     text-decoration: none;
     margin: 20px;
     text-align: center;
