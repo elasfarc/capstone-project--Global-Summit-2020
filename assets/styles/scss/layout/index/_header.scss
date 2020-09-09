@@ -11,11 +11,10 @@
     top: 18%;
     left: 0;
 
-    
     @extend %d-flex;
-    @extend  %flex-dir-col;
-  
+    @extend %flex-dir-col;
     @extend %h-100;
+
     padding: 04.369vw;
     padding-top: 10px;
     margin-left: 20px;

@@ -1,6 +1,7 @@
 .featuredSpeakers {
   color: white;
   background-color: white;
+
   img {
     width: 300px;
   }
@@ -15,15 +16,13 @@
   }
 
   &-speakers {
-    
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:  1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
     &-card {
-
       @extend %d-flex;
-    
+
       padding: 15px 15px 0;
       height: 40.506vw;
 
@@ -31,8 +30,9 @@
         order: 2;
         margin-left: 10vw;
         height: 80%;
+
         @extend %d-flex;
-        @extend  %flex-dir-col;
+        @extend %flex-dir-col;
         @extend %justify-content-spaceAround;
 
         .fs-card-right-top {
@@ -160,21 +160,17 @@
   }
 }
 
-
-
-
-
 //////////////////////
 /// show / hide last two cards [#fs-card3: #fs-card6 ]
 
-
 //DESKTOP   hide the label .fs-menu (more/less)
-//          show/display last fours cards [#fs-card3 : #fs-card6] which are hidden by default 
-           
+//          show/display last fours cards [#fs-card3 : #fs-card6] which are hidden by default
+
 @media screen and (min-width: 768px) {
   .fs-menu {
     display: none;
   }
+
   #fs-card3,
   #fs-card4,
   #fs-card5,
@@ -183,9 +179,8 @@
   }
 }
 
-
-//MOBILE: 
-//       by default: 
+//MOBILE:
+//       by default:
 //                   hide #fs-card3, #fs-card4, #fs-card5 & #fs-card6
 //                   show the label .fs-menu (the whole div)
 //                   hide the .fs-menu child .less (contains 'less' and up icon )
@@ -199,7 +194,6 @@
 }
 
 .fs-menu {
-
   .less {
     @extend %d-none;
   }
@@ -215,35 +209,35 @@
     margin: 0 30px 30px;
     border: 0.5px solid $color-sec;
 
-     &-icon { // up||down icon 
+    &-icon { // up||down icon
       font-size: 10px;
       color: $color-decoration;
       margin-left: 5px;
-     
     }
   }
+
   .more,
   .less {
     color: $color-primary;
     font-family: $font-cocogoose-100;
     font-weight: bold;
     font-size: 12px;
-
   }
 }
 
 //
-//       Checkbox 
-//                   when :checked locate [#fs-card3 : #fs-card6] and display them 
+//       Checkbox
+//                   when :checked locate [#fs-card3 : #fs-card6] and display them
 //                   display ('less' + up icon ) & hide ('more' + down icon )
-//                   
 .fs-checkbox:checked ~ .featuredSpeakers-speakers > :not(:nth-last-child(n + 5)) {
-    display: flex !important;
+  display: flex !important;
 }
-.fs-checkbox:checked ~ .fs-menu > span.more{
+
+.fs-checkbox:checked ~ .fs-menu > span.more {
   @extend %d-none;
 }
-.fs-checkbox:checked ~ .fs-menu > span.less{
+
+.fs-checkbox:checked ~ .fs-menu > span.less {
   @extend %d-flex;
   @extend %align-items-center;
   @extend %justify-content-center;

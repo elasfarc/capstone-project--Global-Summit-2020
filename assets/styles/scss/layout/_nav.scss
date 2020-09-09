@@ -6,9 +6,11 @@
 
   //hide desktop nav by default
   @extend %d-none;
+
   background-color: yellowgreen;
   top: 0;
   left: 0;
+
   @extend %w-100;
 
   .navbar {
@@ -56,7 +58,6 @@
         font-size: 12px;
 
         @include d-flex(flex-end, center);
-        
 
         .b-nav-link {
           padding: 0 10px;
@@ -131,7 +132,9 @@
   position: fixed;
   z-index: 1000;
   background-color: white;
+
   @extend %w-100;
+
   top: 0%;
   left: 0;
 
@@ -162,7 +165,8 @@
 
   //ul
   .nav-list {
-    @extend  %flex-dir-col;
+    @extend %flex-dir-col;
+
     list-style: none;
   }
 
@@ -172,7 +176,9 @@
     color: white;
     font-size: 50px;
     font-family: $font-cocogoose-100;
+
     @extend %d-block;
+
     text-decoration: none;
     margin: 20px;
     text-align: center;

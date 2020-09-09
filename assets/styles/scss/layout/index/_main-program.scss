@@ -23,8 +23,8 @@
 
   &-cardWraper {
     @extend %d-flex;
+    @extend %flex-dir-col;
 
-    @extend  %flex-dir-col;
     width: 90%;
     margin: 0 auto;
 

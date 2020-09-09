@@ -14,6 +14,7 @@
 
     &-1 {
       @extend %d-none;
+
       text-transform: capitalize;
       font-size: calc(1.43rem + 0.5vw);
       font-weight: 300;

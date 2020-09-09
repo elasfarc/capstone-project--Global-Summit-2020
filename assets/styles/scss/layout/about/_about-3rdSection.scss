@@ -4,7 +4,7 @@
   @extend %d-flex;
   @extend %align-items-center;
   @extend %justify-content-spaceAround;
-  @extend  %flex-dir-col;
+  @extend %flex-dir-col;
 
   padding: 20px 0;
 
@@ -31,8 +31,8 @@
   }
 
   &-card {
-
     @extend %d-flex;
+
     > div {
       width: 280px;
       height: 140px;
@@ -43,9 +43,7 @@
       @extend %d-flex;
       @extend %align-items-center;
       @extend %justify-content-center;
-      @extend  %flex-dir-col;
-
-
+      @extend %flex-dir-col;
 
       // text prop.
       text-align: center;

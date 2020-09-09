@@ -1,9 +1,8 @@
 .booking-select-tickets {
-
   @extend %d-flex;
   @extend %align-items-center;
   @extend %justify-content-center;
-  @extend  %flex-dir-col;
+  @extend %flex-dir-col;
 
   margin: 40px 0;
 
@@ -23,10 +22,8 @@
   }
 
   &-descriptionBox {
-    
     @extend %d-flex;
     @extend %align-items-center;
-
 
     font-size: 8px;
 
@@ -60,7 +57,6 @@
 
   &-table {
     max-width: 80%;
-    
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     border: 5px solid $color-decoration;
@@ -120,6 +116,7 @@
     &-table {
       max-width: 90%;
       overflow-x: scroll;
+
       > .lastcol {
         //so on mobile when .table max-width : 90% not Xoverflow
         //width: 90%;

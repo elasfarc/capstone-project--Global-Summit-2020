@@ -6,7 +6,7 @@
   @extend %d-flex;
   @extend %align-items-center;
   @extend %justify-content-center;
- @extend  %flex-dir-col;
+  @extend %flex-dir-col;
 
   &-top {
     color: $color-sec;

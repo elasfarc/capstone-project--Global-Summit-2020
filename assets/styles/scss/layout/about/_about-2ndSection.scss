@@ -4,8 +4,7 @@
   @extend %d-flex;
   @extend %align-items-center;
   @extend %justify-content-spaceAround;
- @extend  %flex-dir-col;
-
+  @extend %flex-dir-col;
 
   padding: 20px 0;
   text-align: center;
@@ -45,11 +44,11 @@
     margin-bottom: 20px;
     border: 1px solid $color-sec;
     width: 400px;
-    
+
     @extend %d-flex;
     @extend %align-items-center;
-    @extend  %flex-dir-col;
- 
+    @extend %flex-dir-col;
+
     position: relative;
 
     &-right {

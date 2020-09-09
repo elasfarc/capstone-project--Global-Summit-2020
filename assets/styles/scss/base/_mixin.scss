@@ -50,9 +50,7 @@
   border-bottom: 0.5px solid $color-sec;
 }
 
-
-
-// sharable 
+// sharable
 
 //g
 %w-100 {
@@ -63,7 +61,7 @@
   height: 100%;
 }
 
-// display 
+// display
 %d-block {
   display: block;
 }
@@ -72,27 +70,26 @@
 }
 
 //flex
- %d-flex {
-   display: flex;
- }
- %flex-dir-col {
-   flex-direction: column;
- }
- %flex-dir-row {
+%d-flex {
+  display: flex;
+}
+%flex-dir-col {
+  flex-direction: column;
+}
+%flex-dir-row {
   flex-direction: row;
 }
 //flex-X-Y
 
-// flex X 
- %justify-content-center {
-   justify-content: center;
- }
- %justify-content-spaceAround {
+// flex X
+%justify-content-center {
+  justify-content: center;
+}
+%justify-content-spaceAround {
   justify-content: space-around;
 }
- 
- // flex Y 
- %align-items-center {
+
+// flex Y
+%align-items-center {
   align-items: center;
 }
-
