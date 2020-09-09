@@ -1,0 +1,99 @@
+
+.partner {
+  height: 200px;
+  background-color: $color-primary;
+
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-center;
+  @extend %flex-dir-col;
+
+  &-top {
+    color: $color-sec;
+    margin: 4vw 0 4vw;
+
+    &::after {
+      @extend %tenPerCent-border-B;
+
+      width: 40%;
+    }
+  }
+
+  &-bottom {
+    padding-bottom: 30px;
+    list-style: none;
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      'p1 p2'
+      'p3 p4'
+      'p5 p6';
+
+    &-item {
+      &-img {
+        width: 9.531vw;
+      }
+    }
+  }
+}
+
+.pbi-1 {
+  grid-area: p1;
+}
+
+.pbi-2 {
+  grid-area: p2;
+}
+
+.pbi-3 {
+  grid-area: p3;
+}
+
+.pbi-4 {
+  grid-area: p4;
+}
+
+.pbi-5 {
+  grid-area: p5;
+}
+
+.pbi-6 {
+  grid-area: p6;
+}
+
+@media screen and (min-width: 768px) {
+  .partner {
+    max-height: 176px;
+    min-height: 176px;
+    justify-content: center;
+
+    &-top {
+      margin: 0 0 1.5vw;
+      font-size: 70%;
+
+      &::after {
+        width: 40%;
+        padding-top: 0.6vw;
+        border-bottom: 2px solid $color-decoration;
+      }
+    }
+
+    &-bottom {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'p1 p2 p3 p4 p5';
+
+      &-item {
+        &-img {
+          width: 100px;
+        }
+      }
+    }
+  }
+
+  .pbi-6 {
+    display: none;
+  }
+}

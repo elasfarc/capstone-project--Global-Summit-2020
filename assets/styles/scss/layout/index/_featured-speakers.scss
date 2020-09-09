@@ -1,0 +1,244 @@
+.featuredSpeakers {
+  color: white;
+  background-color: white;
+
+  img {
+    width: 300px;
+  }
+
+  &-heading {
+    text-align: center;
+    margin: 30px 0;
+
+    &::after {
+      @extend %tenPerCent-border-B;
+    }
+  }
+
+  &-speakers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    &-card {
+      @extend %d-flex;
+
+      padding: 15px 15px 0;
+      height: 40.506vw;
+
+      &-right {
+        order: 2;
+        margin-left: 10vw;
+        height: 80%;
+
+        @extend %d-flex;
+        @extend %flex-dir-col;
+        @extend %justify-content-spaceAround;
+
+        .fs-card-right-top {
+          &::after {
+            content: '';
+            display: block;
+            width: 10%;
+            padding-top: 1.2vw;
+            border-bottom: 4px solid $color-sec;
+          }
+
+          &-1 {
+            font-size: 4.051vw;
+            letter-spacing: 0.8px;
+            padding-bottom: 3px;
+          }
+
+          &-2 {
+            font-size: 3.595vw;
+            color: $color-decoration;
+          }
+        }
+
+        .name-about-bottom {
+          margin-top: -0.3rem;
+          font-size: 2.835vw;
+        }
+      }
+
+      &-left {
+        .fs-card-img img {
+          width: 25.316vw;
+          height: 25.316vw;
+          position: relative;
+          left: 13%;
+          top: -10.127vw;
+          object-fit: cover;
+        }
+
+        .checker img {
+          width: 12.658vw;
+          height: 12.658vw;
+
+          &:first-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .featuredSpeakers {
+    &-heading {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 80%;
+    }
+
+    &-speakers {
+      grid-template-columns: 1fr 1fr;
+
+      &-card {
+        max-height: 150px;
+        margin: 5px 0 5px 5px;
+
+        &-right {
+          margin-left: 3vw;
+          height: 100%;
+          justify-content: flex-start;
+
+          .fs-card-right-top {
+            &::after {
+              width: 10%;
+              padding-top: 0.6vw;
+              border-bottom: 2px solid $color-sec;
+            }
+
+            &-1 {
+              font-size: 16px;
+              letter-spacing: 0.8px;
+              padding-bottom: 3px;
+            }
+
+            &-2 {
+              font-size: 15px;
+              color: $color-decoration;
+              width: 90%;
+            }
+          }
+
+          .name-about-bottom {
+            margin-top: 0.5rem;
+            font-size: 14px;
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  .featuredSpeakers-speakers-card-left {
+    .fs-card-img img {
+      width: 85px;
+      height: 85px;
+      position: relative;
+      left: 13%;
+      top: -30px;
+      object-fit: cover;
+    }
+
+    .checker img {
+      width: 40px;
+      height: 40px;
+
+      &:first-child {
+        display: block;
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+//////////////////////
+/// show / hide last two cards [#fs-card3: #fs-card6 ]
+
+//DESKTOP   hide the label .fs-menu (more/less)
+//          show/display last fours cards [#fs-card3 : #fs-card6] which are hidden by default
+
+@media screen and (min-width: 768px) {
+  .fs-menu {
+    display: none;
+  }
+
+  #fs-card3,
+  #fs-card4,
+  #fs-card5,
+  #fs-card6 {
+    display: flex;    //[ cant use @extend here :(   ]
+  }
+}
+
+//MOBILE:
+//       by default:
+//                   hide #fs-card3, #fs-card4, #fs-card5 & #fs-card6
+//                   show the label .fs-menu (the whole div)
+//                   hide the .fs-menu child .less (contains 'less' and up icon )
+//                   styling for .fs-menu-style
+
+#fs-card3,
+#fs-card4,
+#fs-card5,
+#fs-card6 {
+  @extend %d-none;
+}
+
+.fs-menu {
+  .less {
+    @extend %d-none;
+  }
+
+  .more {
+    @extend %d-flex;
+    @extend %align-items-center;
+    @extend %justify-content-center;
+  }
+
+  &-style {
+    padding: 10px;
+    margin: 0 30px 30px;
+    border: 0.5px solid $color-sec;
+
+    &-icon { // up||down icon
+      font-size: 10px;
+      color: $color-decoration;
+      margin-left: 5px;
+    }
+  }
+
+  .more,
+  .less {
+    color: $color-primary;
+    font-family: $font-cocogoose-100;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
+
+//
+//       Checkbox
+//                   when :checked locate [#fs-card3 : #fs-card6] and display them
+//                   display ('less' + up icon ) & hide ('more' + down icon )
+.fs-checkbox:checked ~ .featuredSpeakers-speakers > :not(:nth-last-child(n + 5)) {
+  display: flex !important;
+}
+
+.fs-checkbox:checked ~ .fs-menu > span.more {
+  @extend %d-none;
+}
+
+.fs-checkbox:checked ~ .fs-menu > span.less {
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-center;
+}

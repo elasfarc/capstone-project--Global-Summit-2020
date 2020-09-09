@@ -1,0 +1,208 @@
+.nav-wraper {
+  height: 50px;
+}
+
+.nav {
+
+  //hide desktop nav by default
+  @extend %d-none;
+
+  background-color: yellowgreen;
+  top: 0;
+  left: 0;
+
+  @extend %w-100;
+
+  .navbar {
+    @extend %d-block;
+
+    &-black {
+      @extend %d-none;
+    }
+
+    &-white {
+      &-left { @extend %d-none; }
+    }
+  }
+
+  .b-nav-link,
+  .w-nav-link {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  // hide burger >MD
+  .burger-wrap {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    background-color: white;
+    position: sticky;
+    z-index: 7;
+
+    .burger-menu {
+      display: none;
+    }
+
+    .navbar {
+      display: block;
+
+      &-black {
+        min-height: 25px;
+        max-height: 25px;
+        background-color: rgb(62, 62, 62);
+        color: white;
+        font-size: 12px;
+
+        @include d-flex(flex-end, center);
+
+        .b-nav-link {
+          padding: 0 10px;
+
+          &:last-child {
+            padding-right: 50px;
+          }
+        }
+      }
+
+      &-white {
+        min-height: 50px;
+        max-height: 50px;
+
+        @include d-flex(space-between, center);
+
+        font-size: 18px;
+
+        &-left {
+          //dispaly left logo (hided < MD)
+          display: block;
+
+          &-wraper {
+            margin-left: 40px;
+
+            .nav-brand {
+              height: 40px;
+            }
+          }
+        }
+
+        &-right {
+          &-wraper {
+            display: inline-flex;
+            font-family: $font-cocogoose-100;
+
+            .here {
+              color: $color-decoration;
+              border: 0.1px solid $color-decoration;
+              box-sizing: content-box;
+              padding: 0 10px;
+            }
+
+            .w-nav-link {
+              padding: 5px 30px;
+
+              &:hover {
+                color: $color-decoration;
+              }
+
+              &:last-child {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//burger wrap so it has its own height when burger-menu itself is fixed
+.burger-wrap {
+  position: relative;
+  z-index: 200;
+}
+
+.burger-menu {
+
+  //burger-menu FIXED ...
+  // removing fixed for the parent nav
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+
+  @extend %w-100;
+
+  top: 0%;
+  left: 0;
+
+  //burger border
+  border: 1px solid $color-sec;
+  padding: 15px;
+  margin-bottom: 300px;
+
+  a {
+    color: rgb(62, 83, 83);
+    font-size: 35px;
+  }
+}
+
+//mobile nav styling third child
+
+.mobile-navbar-white-right-wraper {
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-center;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-primary;
+  position: fixed;
+  top: -100vh;
+  transition: top 0.4s;
+
+  //ul
+  .nav-list {
+    @extend %flex-dir-col;
+
+    list-style: none;
+  }
+
+  //link<a>
+  //&-mobile-w-nav-link {
+  .nav-list-link {
+    color: white;
+    font-size: 50px;
+    font-family: $font-cocogoose-100;
+
+    @extend %d-block;
+
+    text-decoration: none;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.5s;
+
+    &:hover {
+      color: $color-decoration;
+      letter-spacing: 1px;
+      border: 1px solid $color-decoration;
+      padding: 3px;
+    }
+  }
+}
+//mobile nav styling third child
+
+//check-box
+.checkbox:checked ~ .mobile-navbar-white-right-wraper {
+  top: 0;
+}
+
+//burger DESKTOP (HIDE)
+
+@media screen and (min-width: 768px) {
+  .burger-menu {
+    display: none;
+  }
+}

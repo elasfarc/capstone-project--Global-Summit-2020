@@ -1,0 +1,28 @@
+@import 'base/reset';
+@import 'base/var';
+@import 'base/mixin';
+@import 'component';
+//nav
+@import 'layout/nav';
+//home
+@import 'layout/index/header';
+@import 'layout/index/main-program';
+@import 'layout/index/featured-speakers';
+@import 'layout/index/partner-main';
+@import 'layout/index/footer';
+// about
+@import 'layout/about/_about-header';
+@import 'layout/about/about-2ndSection';
+@import 'layout/about/about-3rdSection';
+//booking
+@import 'layout/tickets/booking_select-tickets';
+@import 'layout/tickets/booking_2ndsection';
+
+body {
+  background-color: #f9f9f9;
+}
+
+.great-wraper {
+  max-width: 1200px;
+  margin: 0 auto;
+}

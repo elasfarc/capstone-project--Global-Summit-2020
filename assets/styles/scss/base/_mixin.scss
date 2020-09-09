@@ -1,0 +1,76 @@
+@mixin border {
+  border: 1px solid green;
+}
+
+@mixin d-flex($justifyValue:flex-start, $alienValue:stretch ) {
+  display: flex;
+  justify-content: $justifyValue;
+  align-items: $alienValue;
+}
+
+%tenPerCent-border-B {
+  content: '';
+  display: block;
+  border-bottom: 4px solid $color-decoration;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+@mixin mainProgram-card-background($bg-color: #3c3f46) {
+  background-color: $bg-color;
+  background-image: url(../../imgs/texture.svg);
+}
+%mainProgram-card-background {
+  background-color: #3c3f46;
+  background-image: url(../../imgs/texture.svg);
+}
+
+%border-top-bottom {
+  border-top: 0.5px solid $color-sec;
+  border-bottom: 0.5px solid $color-sec;
+}
+
+// sharable
+
+//g
+%w-100 {
+  width: 100%;
+}
+
+%h-100 {
+  height: 100%;
+}
+
+// display
+%d-block {
+  display: block;
+}
+%d-none {
+  display: none;
+}
+
+//flex
+%d-flex {
+  display: flex;
+}
+%flex-dir-col {
+  flex-direction: column;
+}
+%flex-dir-row {
+  flex-direction: row;
+}
+//flex-X-Y
+
+// flex X
+%justify-content-center {
+  justify-content: center;
+}
+%justify-content-spaceAround {
+  justify-content: space-around;
+}
+
+// flex Y
+%align-items-center {
+  align-items: center;
+}

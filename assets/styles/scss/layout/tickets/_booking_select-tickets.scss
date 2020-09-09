@@ -1,0 +1,126 @@
+.booking-select-tickets {
+  @extend %d-flex;
+  @extend %align-items-center;
+  @extend %justify-content-center;
+  @extend %flex-dir-col;
+
+  margin: 40px 0;
+
+  &-heading {
+    font-family: $font-cocogoose-100;
+    font-size: calc(0.975rem + 0.5vw);
+    line-height: 1;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+
+    &::after {
+      @extend %tenPerCent-border-B;
+
+      width: 20%;
+      padding-top: 10px;
+    }
+  }
+
+  &-descriptionBox {
+    @extend %d-flex;
+    @extend %align-items-center;
+
+    font-size: 8px;
+
+    //border
+    border: 0.5px solid $color-sec;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+
+    > * {
+      margin-left: 10px;
+    }
+
+    .diamond {
+      width: 10px;
+      height: 10px;
+      background-color: $color-decoration;
+      transform: rotate(45deg);
+    }
+
+    .step1 {
+      color: $color-decoration;
+      text-transform: uppercase;
+      font-family: $font-cocogoose-reg;
+    }
+
+    .step1-p {
+      font-size: 12px;
+    }
+  }
+
+  &-table {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 5px solid $color-decoration;
+    border-image: repeating-linear-gradient(-45deg, $color-primary 10px, $color-decoration 20px, $color-sec 30px, $color-primary 40px, $color-decoration 50px) 10;
+    font-size: 12px;
+
+    > .cell {
+      padding: 8px 4px;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black;
+      text-align: center;
+    }
+
+    > .table-head {
+      font-weight: bold;
+      font-size: 105%;
+    }
+
+    > .lastrow {
+      border-bottom-style: none;
+    }
+  }
+}
+
+//diamond-big
+
+.diamond-big {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translate(-50%);
+  background-color: $color-decoration;
+
+  &-content {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 32%;
+    left: 40%;
+    transform: rotate(45deg);
+  }
+}
+
+//mobile
+
+@media screen and (max-width: 768px) {
+  .booking-select-tickets {
+    &-descriptionBox {
+      font-size: 8px;
+
+      .step1-p {
+        font-size: 8px;
+      }
+    }
+
+    &-table {
+      max-width: 90%;
+      overflow-x: scroll;
+
+      > .lastcol {
+        //so on mobile when .table max-width : 90% not Xoverflow
+        //width: 90%;
+      }
+    }
+  }
+}

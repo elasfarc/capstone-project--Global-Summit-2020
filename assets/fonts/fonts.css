@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'COCOGOOSE Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('COCOGOOSE Regular'), url('cocogoose_trial.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Cocogoose Pro';
+  src:
+    url('CocogoosePro-Thin.woff2') format('woff2'),
+    url('CocogoosePro-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}

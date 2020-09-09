@@ -1,0 +1,157 @@
+
+.main-program img {
+  width: 12.316vw;
+  padding: 10px;
+}
+
+.main-program {
+  @include mainProgram-card-background($color-primary);
+
+  color: white;
+  text-align: center;
+  padding: 12.658vw 0;
+
+  &-heading {
+    margin-bottom: 10.19vw;
+
+    &::after {
+      @extend %tenPerCent-border-B;
+
+      border-bottom: 3px solid $color-decoration;
+    }
+  }
+
+  &-cardWraper {
+    @extend %d-flex;
+    @extend %flex-dir-col;
+
+    width: 90%;
+    margin: 0 auto;
+
+    .main-program-card {
+      @include mainProgram-card-background();
+
+      min-height: 20.408vw;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 3.641vw;
+
+      @extend %d-flex;
+      @extend %align-items-center;
+      @extend %justify-content-spaceAround;
+
+      text-align: left;
+      border-radius: 2px;
+
+      h4 {
+        color: $color-decoration;
+        margin-right: 3vw;
+        font-size: 3vw;
+      }
+
+      .card-description {
+        width: 60%; //atention here // // // // // / /
+        padding: 2vw 0;
+
+        p {
+          width: 95%;
+          margin: 0 auto;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .card5 {
+      margin-bottom: 12.136vw;
+    }
+  }
+
+  &-btn {
+    width: 60%;
+    height: 60px;
+    font-family: $font-cocogoose-100;
+    font-size: 0.9rem;
+    background-color: $color-decoration;
+    color: white;
+    border: 1px solid $color-decoration;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.4s;
+
+    &:hover {
+      background-color: white;
+      color: $color-decoration;
+    }
+  }
+
+  &-footer {
+    @extend %d-none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-program img {
+    width: 60px;
+  }
+
+  .main-program {
+    padding: 2.658vw 0;
+
+    &-heading {
+      margin-bottom: 3.19vw;
+      font-size: 80%;
+
+      &::after {
+        width: 3%;
+      }
+    }
+
+    &-cardWraper {
+      flex-direction: row;
+      width: 85%;
+      height: 15%;
+      margin: 0 auto;
+    }
+
+    .main-program-card {
+      width: 100%;
+      padding: 0;
+      margin-right: 4px;
+      margin-bottom: 3.641vw;
+
+      @include d-flex(center, center);
+
+      flex-direction: column;
+      text-align: left;
+
+      &:hover {
+        margin-right: 0;
+        border: 5px solid white;
+        transform: scale(1.05);
+      }
+
+      h4 {
+        color: $color-decoration;
+        margin-right: 0;
+        font-size: 2vw;
+      }
+
+      .card-description {
+        width: 90%; //atention here // // // // // / /
+        padding: 2vw 0;
+        font-size: 10px;
+      }
+    }
+
+    &-footer {
+      text-transform: uppercase;
+      color: $color-sec;
+      display: block;
+      font-size: 10px;
+    }
+  }
+
+  .hideME {
+    display: none;
+  }
+}
