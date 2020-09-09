@@ -777,7 +777,8 @@ a {
     .booking-select-tickets-descriptionBox .step1-p {
       font-size: 8px; }
   .booking-select-tickets-table {
-    max-width: 90%; } }
+    max-width: 90%;
+    overflow-x: scroll; } }
 .booking-section2 {
   background-color: white;
   margin-bottom: 0; }

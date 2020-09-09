@@ -119,7 +119,7 @@
 
     &-table {
       max-width: 90%;
-
+      overflow-x: scroll;
       > .lastcol {
         //so on mobile when .table max-width : 90% not Xoverflow
         //width: 90%;
