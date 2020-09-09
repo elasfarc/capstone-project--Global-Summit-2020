@@ -76,7 +76,9 @@ a {
 
   .nav {
     display: block;
-    background-color: white; }
+    background-color: white;
+    position: sticky;
+    z-index: 7; }
     .nav .burger-menu {
       display: none; }
     .nav .navbar {

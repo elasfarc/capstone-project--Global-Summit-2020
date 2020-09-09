@@ -38,6 +38,8 @@
   .nav {
     display: block;
     background-color: white;
+    position: sticky;
+    z-index: 7;
 
     .burger-menu {
       display: none;
